@@ -1,0 +1,23 @@
+Steps to use ROS2 Navigation Stack:
+- Use world from Lab 4
+- Run navigation stack using saved map & Vincent's launch file
+- 2D pose estimate button
+- click & drag on the map to triangulate
+
+Waypoints:
+- Bring up world with obstacles
+- Load navstack again
+- Place nav goal on the mirror side of the plane between the centre pillar and new obstacle (between hte red and yellow pillar)
+- Obstacle can make the robot mad
+
+For DT3:
+ - Create launch file to start waypoint navigation nodes, /map /odom /scan, publish to /cmd_vel
+ - Merge launch files so you can run everything in one line command
+ - Robot makes 1x1m square, via 4 navigation waypoints, no hard-coding the distances. Complete the square counterclockwise. No collision with map features.
+ - Need automated way to set nav goals, check provided github
+ - Modify lab6.launch and demo_inspection.py for lab7nav.launch.py
+ - Modify:
+	Multiple waypoints
+	angles/yaw in Euler format (currently in quaternion)
+	Test code in sim
+	Test code in bot
