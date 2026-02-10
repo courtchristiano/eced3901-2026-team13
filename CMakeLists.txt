@@ -44,9 +44,10 @@ install(
 
 # Install Python executables
 install(PROGRAMS
-#  scripts/wp_follower.py
+  scripts/wp_follower.py # this is for lab7 / dt3 Hopefully.
   scripts/demo_inspection.py
   DESTINATION lib/${PROJECT_NAME})
+
 
 
 

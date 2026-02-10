@@ -3,6 +3,7 @@
 # Description: Launch a basic mobile robot
 # https://automaticaddison.com
 # Modified: V. Sieben, Feb. 2023.
+# Modified: E. Quill, Feb 2026
 
 import os
 from launch import LaunchDescription
@@ -136,7 +137,7 @@ def generate_launch_description():
   start_wpfollow = Node(
     condition=IfCondition(use_rviz),
     package='eced3901',
-    executable='demo_inspection.py',
+    executable='wp_follower_Updates.py', #changed this from demo_inspetion
     name='wp_follower',
     output='screen') 
   
