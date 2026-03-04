@@ -1,0 +1,7 @@
+[01m[K/home/student/ros2_ws/src/eced3901/src/Demo2.cpp:[m[K In member function ‘[01m[Kvoid DemoNode::odom_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/student/ros2_ws/src/eced3901/src/Demo2.cpp:67:29:[m[K [01;31m[Kerror: [m[K‘[01m[KgetYaw[m[K’ is not a member of ‘[01m[Ktf2[m[K’
+   67 |         current_yaw_ = tf2::[01;31m[KgetYaw[m[K(q);
+      |                             [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/Demo2.dir/build.make:76: CMakeFiles/Demo2.dir/src/Demo2.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/Demo2.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

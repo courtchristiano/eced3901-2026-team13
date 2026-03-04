@@ -14,6 +14,7 @@ find_package(rclpy REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 
 
@@ -24,11 +25,22 @@ ament_target_dependencies(talker rclcpp std_msgs)
 add_executable(dt1 src/eced3901_dt1.cpp)
 ament_target_dependencies(dt1 rclcpp std_msgs nav_msgs geometry_msgs tf2)
 
+add_executable(Demo src/Demo.cpp)
+ament_target_dependencies(Demo rclcpp geometry_msgs nav_msgs sensor_msgs tf2)
+
+add_executable(Demo2 src/Demo2.cpp)
+ament_target_dependencies(Demo2 rclcpp geometry_msgs nav_msgs sensor_msgs tf2)
+
+add_executable(part1 src/part1.cpp)
+ament_target_dependencies(part1 rclcpp geometry_msgs nav_msgs sensor_msgs tf2)
 
 # Install Cpp executables
 install(TARGETS
   talker
   dt1
+  Demo2
+  Demo
+  part1
   DESTINATION lib/${PROJECT_NAME})
 # uncomment the following section in order to fill in
 # further dependencies manually.
@@ -46,6 +58,7 @@ install(
 install(PROGRAMS
   scripts/wp_follower.py # this is for lab7 / dt3 Hopefully.
   scripts/demo_inspection.py
+  scripts/part3.py
   DESTINATION lib/${PROJECT_NAME})
 
 

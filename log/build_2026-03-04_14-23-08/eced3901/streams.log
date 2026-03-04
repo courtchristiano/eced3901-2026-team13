@@ -1,0 +1,13 @@
+[0.010s] Invoking command in '/home/student/ros2_ws/src/eced3901/build/eced3901': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/imu_ws/install/bno055:/home/student/motor_ws/install/dalmotor:/opt/ros/humble /usr/bin/cmake --build /home/student/ros2_ws/src/eced3901/build/eced3901 -- -j4 -l4
+[0.081s] [ 12%] [32mBuilding CXX object CMakeFiles/Demo2.dir/src/Demo2.cpp.o[0m
+[0.082s] [ 62%] Built target talker
+[0.083s] [ 62%] Built target dt1
+[0.085s] [ 87%] Built target Demo
+[2.400s] [01m[K/home/student/ros2_ws/src/eced3901/src/Demo2.cpp:[m[K In member function ‘[01m[Kvoid DemoNode::odom_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.400s] [01m[K/home/student/ros2_ws/src/eced3901/src/Demo2.cpp:67:29:[m[K [01;31m[Kerror: [m[K‘[01m[KgetYaw[m[K’ is not a member of ‘[01m[Ktf2[m[K’
+[2.400s]    67 |         current_yaw_ = tf2::[01;31m[KgetYaw[m[K(q);
+[2.400s]       |                             [01;31m[K^~~~~~[m[K
+[4.849s] gmake[2]: *** [CMakeFiles/Demo2.dir/build.make:76: CMakeFiles/Demo2.dir/src/Demo2.cpp.o] Error 1
+[4.849s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/Demo2.dir/all] Error 2
+[4.849s] gmake: *** [Makefile:146: all] Error 2
+[4.851s] Invoked command in '/home/student/ros2_ws/src/eced3901/build/eced3901' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/imu_ws/install/bno055:/home/student/motor_ws/install/dalmotor:/opt/ros/humble /usr/bin/cmake --build /home/student/ros2_ws/src/eced3901/build/eced3901 -- -j4 -l4

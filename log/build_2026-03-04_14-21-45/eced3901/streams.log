@@ -1,0 +1,13 @@
+[0.014s] Invoking command in '/home/student/ros2_ws/src/eced3901/build/eced3901': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/imu_ws/install/bno055:/home/student/motor_ws/install/dalmotor:/opt/ros/humble /usr/bin/cmake --build /home/student/ros2_ws/src/eced3901/build/eced3901 -- -j4 -l4
+[0.114s] [ 25%] Built target talker
+[0.114s] [ 50%] Built target Demo
+[0.115s] [ 87%] Built target dt1
+[0.115s] [ 87%] [32mBuilding CXX object CMakeFiles/Demo2.dir/src/Demo2.cpp.o[0m
+[0.393s] [01m[K/home/student/ros2_ws/src/eced3901/src/Demo2.cpp:10:10:[m[K [01;31m[Kfatal error: [m[Ktf2_geometry_msgs/tf2_geometry_msgs.hpp: No such file or directory
+[0.393s]    10 | #include [01;31m[K"tf2_geometry_msgs/tf2_geometry_msgs.hpp"[m[K
+[0.393s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.393s] compilation terminated.
+[0.395s] gmake[2]: *** [CMakeFiles/Demo2.dir/build.make:76: CMakeFiles/Demo2.dir/src/Demo2.cpp.o] Error 1
+[0.395s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/Demo2.dir/all] Error 2
+[0.395s] gmake: *** [Makefile:146: all] Error 2
+[0.397s] Invoked command in '/home/student/ros2_ws/src/eced3901/build/eced3901' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/imu_ws/install/bno055:/home/student/motor_ws/install/dalmotor:/opt/ros/humble /usr/bin/cmake --build /home/student/ros2_ws/src/eced3901/build/eced3901 -- -j4 -l4
