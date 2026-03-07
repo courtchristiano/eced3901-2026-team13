@@ -1,0 +1,83 @@
+[0.000000] (-) TimerEvent: {}
+[0.000394] (eced3901) JobQueued: {'identifier': 'eced3901', 'dependencies': OrderedDict()}
+[0.000585] (eced3901) JobStarted: {'identifier': 'eced3901'}
+[0.008189] (eced3901) JobProgress: {'identifier': 'eced3901', 'progress': 'cmake'}
+[0.008712] (eced3901) JobProgress: {'identifier': 'eced3901', 'progress': 'build'}
+[0.009398] (eced3901) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/student/ros2_ws/src/eced3901/build/eced3901', '--', '-j4', '-l4'], 'cwd': '/home/student/ros2_ws/src/eced3901/build/eced3901', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'student'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/student'), ('OLDPWD', '/home/student/ros2_ws/src/eced3901/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '893'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/student/ros2_ws/install:/home/student/imu_ws/install:/home/student/ydlidar_ros2_ws/install:/home/student/motor_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'student'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'student'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/student/ros2_ws/src/eced3901/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mini:@/tmp/.ICE-unix/870,unix/mini:/tmp/.ICE-unix/870'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/47fa1f2d_2552_4f32_8da3_91f838f51be3'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.5QSQL3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '13'), ('AMENT_PREFIX_PATH', '/home/student/ros2_ws/install/eced3901:/home/student/imu_ws/install/bno055:/home/student/ydlidar_ros2_ws/install/ydlidar:/home/student/motor_ws/install/dalmotor:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/student/ros2_ws/src/eced3901/build/eced3901'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/student/imu_ws/install/bno055/lib/python3.10/site-packages:/home/student/motor_ws/install/dalmotor/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/student/ros2_ws/install/eced3901:/home/student/ydlidar_ros2_ws/install/ydlidar:/home/student/imu_ws/install/bno055:/home/student/motor_ws/install/dalmotor:/opt/ros/humble')]), 'shell': False}
+[0.067222] (eced3901) StdoutLine: {'line': b'[ 40%] Built target Demo\n'}
+[0.067494] (eced3901) StdoutLine: {'line': b'[ 40%] Built target talker\n'}
+[0.068707] (eced3901) StdoutLine: {'line': b'[ 60%] Built target Demo2\n'}
+[0.071394] (eced3901) StdoutLine: {'line': b'[ 80%] Built target dt1\n'}
+[0.079889] (eced3901) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target part1\x1b[0m\n'}
+[0.094332] (eced3901) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/part1.dir/src/part1.cpp.o\x1b[0m\n'}
+[0.099837] (-) TimerEvent: {}
+[0.200116] (-) TimerEvent: {}
+[0.300419] (-) TimerEvent: {}
+[0.400711] (-) TimerEvent: {}
+[0.501016] (-) TimerEvent: {}
+[0.601301] (-) TimerEvent: {}
+[0.701604] (-) TimerEvent: {}
+[0.801912] (-) TimerEvent: {}
+[0.902235] (-) TimerEvent: {}
+[1.002538] (-) TimerEvent: {}
+[1.102802] (-) TimerEvent: {}
+[1.203139] (-) TimerEvent: {}
+[1.303445] (-) TimerEvent: {}
+[1.403751] (-) TimerEvent: {}
+[1.504096] (-) TimerEvent: {}
+[1.604387] (-) TimerEvent: {}
+[1.704679] (-) TimerEvent: {}
+[1.804991] (-) TimerEvent: {}
+[1.905303] (-) TimerEvent: {}
+[2.005610] (-) TimerEvent: {}
+[2.105917] (-) TimerEvent: {}
+[2.206233] (-) TimerEvent: {}
+[2.306512] (-) TimerEvent: {}
+[2.406819] (-) TimerEvent: {}
+[2.506594] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KSquareRoutine::SquareRoutine()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.506772] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:38:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Krclcpp::QoS qos\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.506839] (-) TimerEvent: {}
+[2.506933] (eced3901) StderrLine: {'line': b'   38 |         rclcpp::QoS \x1b[01;31m\x1b[Kqos\x1b[m\x1b[K(rclcpp::KeepLast(10));\n'}
+[2.507011] (eced3901) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.507096] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:35:21:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp::QoS qos\x1b[m\x1b[K\xe2\x80\x99 previously declared here\n'}
+[2.507161] (eced3901) StderrLine: {'line': b'   35 |         rclcpp::QoS \x1b[01;36m\x1b[Kqos\x1b[m\x1b[K(rclcpp::KeepLast(10));\n'}
+[2.507219] (eced3901) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.606984] (-) TimerEvent: {}
+[2.707330] (-) TimerEvent: {}
+[2.807599] (-) TimerEvent: {}
+[2.907868] (-) TimerEvent: {}
+[3.008146] (-) TimerEvent: {}
+[3.108413] (-) TimerEvent: {}
+[3.208692] (-) TimerEvent: {}
+[3.308994] (-) TimerEvent: {}
+[3.409280] (-) TimerEvent: {}
+[3.509567] (-) TimerEvent: {}
+[3.609883] (-) TimerEvent: {}
+[3.710209] (-) TimerEvent: {}
+[3.810518] (-) TimerEvent: {}
+[3.910798] (-) TimerEvent: {}
+[4.011115] (-) TimerEvent: {}
+[4.111399] (-) TimerEvent: {}
+[4.211692] (-) TimerEvent: {}
+[4.311969] (-) TimerEvent: {}
+[4.412274] (-) TimerEvent: {}
+[4.512530] (-) TimerEvent: {}
+[4.612838] (-) TimerEvent: {}
+[4.713141] (-) TimerEvent: {}
+[4.813432] (-) TimerEvent: {}
+[4.913746] (-) TimerEvent: {}
+[5.014058] (-) TimerEvent: {}
+[5.114331] (-) TimerEvent: {}
+[5.214632] (-) TimerEvent: {}
+[5.314938] (-) TimerEvent: {}
+[5.415215] (-) TimerEvent: {}
+[5.515487] (-) TimerEvent: {}
+[5.615762] (-) TimerEvent: {}
+[5.716046] (-) TimerEvent: {}
+[5.807956] (eced3901) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/part1.dir/build.make:76: CMakeFiles/part1.dir/src/part1.cpp.o] Error 1\n'}
+[5.808214] (eced3901) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/part1.dir/all] Error 2\n'}
+[5.808354] (eced3901) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.810170] (eced3901) CommandEnded: {'returncode': 2}
+[5.816169] (-) TimerEvent: {}
+[5.822030] (eced3901) JobEnded: {'identifier': 'eced3901', 'rc': 2}
+[5.832617] (-) EventReactorShutdown: {}

@@ -652,4 +652,10 @@ CMakeFiles/part1.dir/src/part1.cpp.o: \
  /opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.h \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp \
- /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/laser_scan.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__struct.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__builder.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__traits.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__type_support.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp

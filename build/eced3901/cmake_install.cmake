@@ -159,6 +159,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/eced3901" TYPE PROGRAM FILES
     "/home/student/ros2_ws/src/eced3901/scripts/wp_follower.py"
     "/home/student/ros2_ws/src/eced3901/scripts/demo_inspection.py"
+    "/home/student/ros2_ws/src/eced3901/scripts/part3.py"
+    "/home/student/ros2_ws/src/eced3901/scripts/wp_demo.py"
     )
 endif()
 

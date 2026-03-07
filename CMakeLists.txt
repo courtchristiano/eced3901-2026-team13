@@ -16,6 +16,7 @@ find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(tf2 REQUIRED)
+find_package(sensor_msgs REQUIRED)
 
 
 # Create Cpp executable
@@ -32,7 +33,7 @@ add_executable(Demo2 src/Demo2.cpp)
 ament_target_dependencies(Demo2 rclcpp geometry_msgs nav_msgs sensor_msgs tf2)
 
 add_executable(part1 src/part1.cpp)
-ament_target_dependencies(part1 rclcpp geometry_msgs nav_msgs sensor_msgs tf2)
+ament_target_dependencies(part1 rclcpp geometry_msgs nav_msgs sensor_msgs tf2 sensor_msgs)
 
 # Install Cpp executables
 install(TARGETS
@@ -59,6 +60,7 @@ install(PROGRAMS
   scripts/wp_follower.py # this is for lab7 / dt3 Hopefully.
   scripts/demo_inspection.py
   scripts/part3.py
+  scripts/wp_demo.py
   DESTINATION lib/${PROJECT_NAME})
 
 

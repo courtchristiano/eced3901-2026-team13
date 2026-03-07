@@ -1,7 +1,3 @@
-/*
-Code for DT1 - Fixed Sequence
-Moves forward first, then turns, following your full course
-*/
 
 #include <chrono>
 #include <functional>
@@ -12,6 +8,9 @@ Moves forward first, then turns, following your full course
 #include "nav_msgs/msg/odometry.hpp"
 #include <tf2/LinearMath/Quaternion.h>
 #include <tf2/LinearMath/Matrix3x3.h>
+
+//added in lidar messages
+#include "sensor_msgs/msg/laser_scan.hpp"
 
 using namespace std::chrono_literals;
 using std::placeholders::_1;
@@ -31,9 +30,23 @@ public:
         count_ = 0;
         last_state_complete = 1; // ready for first step
         current_action_ = Action::IDLE;
-    }
+
+        //adding in lidar sub
+
+	rclcpp::QoS qos(rclcpp::KeepLast(10));
+	qos.best_effort();
+
+	lidar_sub_ = this->create_subscription<sensor_msgs::msg::LaserScan>("/scan",qos,std::bind(&SquareRoutine::lidar_callback, this, _1));
+}
 
 private:
+    //added method to store front wall distance
+    void lidar_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg) {
+        int front_index = msg->ranges.size() / 2; //straight ahead
+        front_wall_dist = msg->ranges[front_index];
+        RCLCPP_INFO(this->get_logger(), "Front wall: %f", front_wall_dist);
+    }
+    
     void topic_callback(const nav_msgs::msg::Odometry::SharedPtr msg)
     {
         x_now = msg->pose.pose.position.x;
@@ -102,16 +115,21 @@ private:
 
             switch (count_)
             {
-                case 0: move_distance(1.2192); break; // 4 ft forward
-                case 1: turn_angle(M_PI / 2); break;  // turn left 90°
-                case 2: move_distance(0.3068); break; // 1 ft forward
-                case 3: turn_angle(-M_PI / 2); break; // turn right 90°
-                case 4: move_distance(1.2192); break; // 4 ft forward
-                case 5: turn_angle(-M_PI / 2); break; // turn right 90°
-                case 6: move_distance(0.35); break; // 1 ft forward
-                case 7: turn_angle(M_PI / 2); break;  // turn left 90°
-                case 8: move_distance(1.2192); break; // 4 ft final leg
-                default: break; // done
+            case 0: move_distance(1.2192); break; // 4 ft forward
+            case 1: correct_with_wall(0.20); break;
+            case 2: turn_angle(M_PI / 2); break;  // turn left 90°
+            case 3: move_distance(0.3068); break; // 1 ft forward
+            case 4: correct_with_wall(0.20); break;
+            case 5: turn_angle(-M_PI / 2); break; // turn right 90°
+            case 6: move_distance(1.2192); break; // 4 ft forward
+            case 7: correct_with_wall(0.20); break;
+            case 8: turn_angle(-M_PI / 2); break; // turn right 90°
+            case 9: move_distance(0.35); break; // 1 ft forward
+            case 10: correct_with_wall(0.20); break;
+            case 11: turn_angle(M_PI / 2); break;  // turn left 90°
+            case 12: move_distance(1.2192); break; // 4 ft final leg
+            case 13: correct_with_wall(0.20); break;
+            default: break; // done
             }
         }
     }
@@ -135,15 +153,29 @@ private:
 
     double wrap_angle(double angle)
     {
-        angle = fmod(angle + M_PI, 2*M_PI);
-        if (angle < 0) angle += 2*M_PI;
+        angle = fmod(angle + M_PI, 2 * M_PI);
+        if (angle < 0) angle += 2 * M_PI;
         return angle - M_PI;
+    }
+
+    //added function to correct pose
+    void correct_with_wall(double target_dist) {
+        double error = front_wall_dist - target_dist;
+        if (std::fabs(error) > 0.02) { //2 cm error margin 
+            move_distance(std::fabs(error));
+            if(error < 0){
+            	x_vel = -0.1;
+            }else{
+            	x_vel = 0.1;
+        }
+        }
     }
 
     // ROS members
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr subscription_;
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr publisher_;
     rclcpp::TimerBase::SharedPtr timer_;
+    rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr lidar_sub_;
 
     // Robot state
     double x_now = 0, y_now = 0, x_init = 0, y_init = 0;
@@ -159,6 +191,9 @@ private:
 
     enum class Action { IDLE, MOVE, TURN };
     Action current_action_ = Action::IDLE;
+
+    //adding front wall dist variable
+    double front_wall_dist = 0.0;
 };
 
 // Main
@@ -169,6 +204,3 @@ int main(int argc, char* argv[])
     rclcpp::shutdown();
     return 0;
 }
-
-
-

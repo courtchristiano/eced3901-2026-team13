@@ -1,0 +1,8 @@
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:[m[K In constructor ‘[01m[KSquareRoutine::SquareRoutine()[m[K’:
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:35:9:[m[K [01;31m[Kerror: [m[K‘[01m[Klidar_sub[m[K’ was not declared in this scope; did you mean ‘[01m[Klidar_sub_[m[K’?
+   35 |         [01;31m[Klidar_sub[m[K = this->create_subscription<sensor_msgs::msg::LaserScan>("scan", 10, std::bind(&SquareRoutine::lidar_callback, this, _1));
+      |         [01;31m[K^~~~~~~~~[m[K
+      |         [32m[Klidar_sub_[m[K
+gmake[2]: *** [CMakeFiles/part1.dir/build.make:76: CMakeFiles/part1.dir/src/part1.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/part1.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

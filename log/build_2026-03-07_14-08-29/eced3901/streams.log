@@ -1,0 +1,16 @@
+[0.010s] Invoking command in '/home/student/ros2_ws/src/eced3901/build/eced3901': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/imu_ws/install/bno055:/home/student/motor_ws/install/dalmotor:/opt/ros/humble /usr/bin/cmake --build /home/student/ros2_ws/src/eced3901/build/eced3901 -- -j4 -l4
+[0.067s] [ 40%] Built target Demo2
+[0.067s] [ 40%] Built target dt1
+[0.068s] [ 60%] Built target Demo
+[0.071s] [ 80%] Built target talker
+[0.079s] [35m[1mConsolidate compiler generated dependencies of target part1[0m
+[0.099s] [ 90%] [32mBuilding CXX object CMakeFiles/part1.dir/src/part1.cpp.o[0m
+[2.453s] [01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:[m[K In constructor ‘[01m[KSquareRoutine::SquareRoutine()[m[K’:
+[2.453s] [01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:35:93:[m[K [01;31m[Kerror: [m[K‘[01m[KSensorDataQos[m[K’ is not a member of ‘[01m[Krclcpp[m[K’; did you mean ‘[01m[KSensorDataQoS[m[K’?
+[2.453s]    35 | e_subscription<sensor_msgs::msg::LaserScan>("scan", rclcpp::[01;31m[KSensorDataQos[m[K(), std::bind(&SquareRoutine::lidar_callback, this, _1));
+[2.453s]       |                                                             [01;31m[K^~~~~~~~~~~~~[m[K
+[2.453s]       |                                                             [32m[KSensorDataQoS[m[K
+[4.894s] gmake[2]: *** [CMakeFiles/part1.dir/build.make:76: CMakeFiles/part1.dir/src/part1.cpp.o] Error 1
+[4.895s] gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/part1.dir/all] Error 2
+[4.895s] gmake: *** [Makefile:146: all] Error 2
+[4.897s] Invoked command in '/home/student/ros2_ws/src/eced3901/build/eced3901' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/imu_ws/install/bno055:/home/student/motor_ws/install/dalmotor:/opt/ros/humble /usr/bin/cmake --build /home/student/ros2_ws/src/eced3901/build/eced3901 -- -j4 -l4
