@@ -42,11 +42,27 @@ public:
 private:
     //added method to store front wall distance
     void lidar_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg) {
-        int front_index = msg->ranges.size() / 2; //straight ahead
-        front_wall_dist = msg->ranges[front_index];
-        RCLCPP_INFO(this->get_logger(), "Front wall: %f", front_wall_dist);
-    }
-    
+    	int front_index = msg->ranges.size() / 2; // straight ahead
+    	front_wall_dist = msg->ranges[front_index];
+
+    	double target_dist = 0.2;  // 20 cm
+    	double tolerance = 0.02;   // ±2 cm
+
+    	geometry_msgs::msg::Twist cmd;
+
+    	if (front_wall_dist > target_dist + tolerance) {
+        	cmd.linear.x = x_vel;  // move forward
+        	cmd.angular.z = 0.0;
+    	} else if (front_wall_dist < target_dist - tolerance) {
+        	cmd.linear.x = -x_vel; // move backward
+        	cmd.angular.z = 0.0;
+    	} else {
+    		last_state_complete = 1; //move to next action 
+    	}
+
+    publisher_->publish(cmd);
+    //RCLCPP_INFO(this->get_logger(), "Front wall: %f", front_wall_dist);
+}
     void topic_callback(const nav_msgs::msg::Odometry::SharedPtr msg)
     {
         x_now = msg->pose.pose.position.x;
@@ -115,20 +131,20 @@ private:
 
             switch (count_)
             {
-            case 0: move_distance(1.2192); break; // 4 ft forward
-            case 1: correct_with_wall(0.20); break;
-            case 2: turn_angle(M_PI / 2); break;  // turn left 90°
-            case 3: move_distance(0.3068); break; // 1 ft forward
-            case 4: correct_with_wall(0.20); break;
-            case 5: turn_angle(-M_PI / 2); break; // turn right 90°
-            case 6: move_distance(1.2192); break; // 4 ft forward
-            case 7: correct_with_wall(0.20); break;
-            case 8: turn_angle(-M_PI / 2); break; // turn right 90°
-            case 9: move_distance(0.35); break; // 1 ft forward
-            case 10: correct_with_wall(0.20); break;
-            case 11: turn_angle(M_PI / 2); break;  // turn left 90°
-            case 12: move_distance(1.2192); break; // 4 ft final leg
-            case 13: correct_with_wall(0.20); break;
+            case 0: move_distance(1.2192); RCLCPP_INFO(this->get_logger(), "Case 0");break; // 4 ft forward
+            case 1: correct_with_wall(0.32); RCLCPP_INFO(this->get_logger(), "Case 1");break;
+            case 2: turn_angle(M_PI / 2); RCLCPP_INFO(this->get_logger(), "Case 2");break;  // turn left 90°
+            case 3: move_distance(0.3068); RCLCPP_INFO(this->get_logger(), "Case 3");break; // 1 ft forward
+            case 4: correct_with_wall(0.32); RCLCPP_INFO(this->get_logger(), "Case 4");break;
+            case 5: turn_angle(-M_PI / 2); RCLCPP_INFO(this->get_logger(), "Case 5");break; // turn right 90°
+            case 6: move_distance(1.2192); RCLCPP_INFO(this->get_logger(), "Case 6");break; // 4 ft forward
+            case 7: correct_with_wall(0.32); RCLCPP_INFO(this->get_logger(), "Case 7");break;
+            case 8: turn_angle(-M_PI / 2); RCLCPP_INFO(this->get_logger(), "Case 8");break; // turn right 90°
+            case 9: move_distance(0.35); RCLCPP_INFO(this->get_logger(), "Case 9");break; // 1 ft forward
+            case 10: correct_with_wall(0.32); RCLCPP_INFO(this->get_logger(), "Case 10");break;
+            case 11: turn_angle(M_PI / 2); RCLCPP_INFO(this->get_logger(), "Case 11");break;  // turn left 90°
+            case 12: move_distance(1.2192); RCLCPP_INFO(this->get_logger(), "Case 12");break; // 4 ft final leg
+            case 13: correct_with_wall(0.32); RCLCPP_INFO(this->get_logger(), "Case 13");break;
             default: break; // done
             }
         }
@@ -160,16 +176,18 @@ private:
 
     //added function to correct pose
     void correct_with_wall(double target_dist) {
-        double error = front_wall_dist - target_dist;
-        if (std::fabs(error) > 0.02) { //2 cm error margin 
-            move_distance(std::fabs(error));
-            if(error < 0){
-            	x_vel = -0.1;
-            }else{
-            	x_vel = 0.1;
-        }
-        }
-    }
+    	RCLCPP_INFO(this->get_logger(), "Front wall: %f", front_wall_dist);
+    	double error = front_wall_dist - target_dist; // positive if too far, negative if too close
+    	if (std::fabs(error) > 0.07) { // 2 cm tolerance
+        	x_vel = (error > 0) ? 0.05 : -0.05; // move forward if too far, backward if too close
+        	move_distance(error);        // use signed error
+        	x_vel = 0.1;
+
+    	}else{
+    	last_state_complete = 1;
+    	}
+    	
+}
 
     // ROS members
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr subscription_;
