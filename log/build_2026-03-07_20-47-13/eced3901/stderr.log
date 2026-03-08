@@ -1,0 +1,284 @@
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:227:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  227 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:19:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   19 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:[m[K In constructor ‘[01m[KSquareRoutine::SquareRoutine()[m[K’:
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:23:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+   23 |         [01;31m[Ksubscription_[m[K = this->create_subscription<nav_msgs::msg::Odometry>(
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+      |         [32m[Krmw_subscription_t[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:26:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+   26 |         [01;31m[Kpublisher_[m[K = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
+      |         [01;31m[K^~~~~~~~~~[m[K
+      |         [32m[Krmw_publisher_t[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:27:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+   27 |         [01;31m[Ktimer_[m[K = this->create_wall_timer(100ms, std::bind(&SquareRoutine::timer_callback, this));
+      |         [01;31m[K^~~~~~[m[K
+      |         [32m[Ktimer_t[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:30:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcount_[m[K’ was not declared in this scope
+   30 |         [01;31m[Kcount_[m[K = 0;
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:31:9:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_state_complete[m[K’ was not declared in this scope
+   31 |         [01;31m[Klast_state_complete[m[K = 1; // ready for first step
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:32:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_action_[m[K’ was not declared in this scope
+   32 |         [01;31m[Kcurrent_action_[m[K = Action::IDLE;
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:32:27:[m[K [01;31m[Kerror: [m[K‘[01m[KAction[m[K’ has not been declared
+   32 |         current_action_ = [01;31m[KAction[m[K::IDLE;
+      |                           [01;31m[K^~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:39:9:[m[K [01;31m[Kerror: [m[K‘[01m[Klidar_sub_[m[K’ was not declared in this scope
+   39 |         [01;31m[Klidar_sub_[m[K = this->create_subscription<sensor_msgs::msg::LaserScan>("/scan",qos,std::bind(&SquareRoutine::lidar_callback, this, _1));
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:[m[K In member function ‘[01m[Kvoid SquareRoutine::lidar_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:46:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kfront_wall_dist[m[K’ was not declared in this scope
+   46 |         [01;31m[Kfront_wall_dist[m[K = msg->ranges[front_index];
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:[m[K In member function ‘[01m[Kvoid SquareRoutine::topic_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:69:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kx_now[m[K’ was not declared in this scope; did you mean ‘[01m[Know[m[K’?
+   69 |         [01;31m[Kx_now[m[K = msg->pose.pose.position.x;
+      |         [01;31m[K^~~~~[m[K
+      |         [32m[Know[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:70:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ky_now[m[K’ was not declared in this scope; did you mean ‘[01m[Know[m[K’?
+   70 |         [01;31m[Ky_now[m[K = msg->pose.pose.position.y;
+      |         [01;31m[K^~~~~[m[K
+      |         [32m[Know[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:71:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kq_x[m[K’ was not declared in this scope
+   71 |         [01;31m[Kq_x[m[K = msg->pose.pose.orientation.x;
+      |         [01;31m[K^~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:72:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kq_y[m[K’ was not declared in this scope
+   72 |         [01;31m[Kq_y[m[K = msg->pose.pose.orientation.y;
+      |         [01;31m[K^~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:73:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kq_z[m[K’ was not declared in this scope
+   73 |         [01;31m[Kq_z[m[K = msg->pose.pose.orientation.z;
+      |         [01;31m[K^~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:74:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kq_w[m[K’ was not declared in this scope
+   74 |         [01;31m[Kq_w[m[K = msg->pose.pose.orientation.w;
+      |         [01;31m[K^~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:[m[K In member function ‘[01m[Kvoid SquareRoutine::timer_callback()[m[K’:
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:82:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kq_x[m[K’ was not declared in this scope
+   82 |         tf2::Quaternion q([01;31m[Kq_x[m[K, q_y, q_z, q_w);
+      |                           [01;31m[K^~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:82:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kq_y[m[K’ was not declared in this scope
+   82 |         tf2::Quaternion q(q_x, [01;31m[Kq_y[m[K, q_z, q_w);
+      |                                [01;31m[K^~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:82:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kq_z[m[K’ was not declared in this scope
+   82 |         tf2::Quaternion q(q_x, q_y, [01;31m[Kq_z[m[K, q_w);
+      |                                     [01;31m[K^~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:82:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kq_w[m[K’ was not declared in this scope
+   82 |         tf2::Quaternion q(q_x, q_y, q_z, [01;31m[Kq_w[m[K);
+      |                                          [01;31m[K^~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:86:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kth_now[m[K’ was not declared in this scope
+   86 |         [01;31m[Kth_now[m[K = yaw;
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:89:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kd_now[m[K’ was not declared in this scope; did you mean ‘[01m[Know[m[K’?
+   89 |         [01;31m[Kd_now[m[K = std::hypot(x_now - x_init, y_now - y_init);
+      |         [01;31m[K^~~~~[m[K
+      |         [32m[Know[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:89:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kx_now[m[K’ was not declared in this scope; did you mean ‘[01m[Know[m[K’?
+   89 |         d_now = std::hypot([01;31m[Kx_now[m[K - x_init, y_now - y_init);
+      |                            [01;31m[K^~~~~[m[K
+      |                            [32m[Know[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:89:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kx_init[m[K’ was not declared in this scope; did you mean ‘[01m[Ku_int[m[K’?
+   89 |         d_now = std::hypot(x_now - [01;31m[Kx_init[m[K, y_now - y_init);
+      |                                    [01;31m[K^~~~~~[m[K
+      |                                    [32m[Ku_int[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:89:44:[m[K [01;31m[Kerror: [m[K‘[01m[Ky_now[m[K’ was not declared in this scope; did you mean ‘[01m[Know[m[K’?
+   89 |         d_now = std::hypot(x_now - x_init, [01;31m[Ky_now[m[K - y_init);
+      |                                            [01;31m[K^~~~~[m[K
+      |                                            [32m[Know[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:89:52:[m[K [01;31m[Kerror: [m[K‘[01m[Ky_init[m[K’ was not declared in this scope; did you mean ‘[01m[Ku_int[m[K’?
+   89 |         d_now = std::hypot(x_now - x_init, y_now - [01;31m[Ky_init[m[K);
+      |                                                    [01;31m[K^~~~~~[m[K
+      |                                                    [32m[Ku_int[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:91:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_action_[m[K’ was not declared in this scope
+   91 |         if ([01;31m[Kcurrent_action_[m[K == Action::MOVE)
+      |             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:91:32:[m[K [01;31m[Kerror: [m[K‘[01m[KAction[m[K’ has not been declared
+   91 |         if (current_action_ == [01;31m[KAction[m[K::MOVE)
+      |                                [01;31m[K^~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:93:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kx_vel[m[K’ was not declared in this scope
+   93 |         msg.linear.x = [01;31m[Kx_vel[m[K;
+      |                        [01;31m[K^~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:94:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kd_aim[m[K’ was not declared in this scope
+   94 |             double error = [01;31m[Kd_aim[m[K - d_now;
+      |                            [01;31m[K^~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:97:33:[m[K [01;31m[Kerror: [m[K‘[01m[Kfront_wall_dist[m[K’ was not declared in this scope
+   97 |             if (error < 0.01 || [01;31m[Kfront_wall_dist[m[K < 0.32) // 1 cm tolerance
+      |                                 [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:101:35:[m[K [01;31m[Kerror: [m[K‘[01m[KAction[m[K’ has not been declared
+  101 |                 current_action_ = [01;31m[KAction[m[K::IDLE;
+      |                                   [01;31m[K^~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:102:17:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_state_complete[m[K’ was not declared in this scope
+  102 |                 [01;31m[Klast_state_complete[m[K = 1;
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:107:37:[m[K [01;31m[Kerror: [m[K‘[01m[KAction[m[K’ has not been declared
+  107 |         else if (current_action_ == [01;31m[KAction[m[K::TURN)
+      |                                     [01;31m[K^~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:109:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kth_init[m[K’ was not declared in this scope; did you mean ‘[01m[Ku_int[m[K’?
+  109 |             double angle_turned = wrap_angle(th_now - [01;31m[Kth_init[m[K);
+      |                                                       [01;31m[K^~~~~~~[m[K
+      |                                                       [32m[Ku_int[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:110:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kth_aim[m[K’ was not declared in this scope
+  110 |             double remaining = [01;31m[Kth_aim[m[K - angle_turned;
+      |                                [01;31m[K^~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:114:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kth_vel[m[K’ was not declared in this scope
+  114 |                 msg.angular.z = (remaining > 0 ? [01;31m[Kth_vel[m[K : -th_vel);
+      |                                                  [01;31m[K^~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:119:35:[m[K [01;31m[Kerror: [m[K‘[01m[KAction[m[K’ has not been declared
+  119 |                 current_action_ = [01;31m[KAction[m[K::IDLE;
+      |                                   [01;31m[K^~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:120:17:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_state_complete[m[K’ was not declared in this scope
+  120 |                 [01;31m[Klast_state_complete[m[K = 1;
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:124:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+  124 |         [01;31m[Kpublisher_[m[K->publish(msg);
+      |         [01;31m[K^~~~~~~~~~[m[K
+      |         [32m[Krmw_publisher_t[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:[m[K In member function ‘[01m[Kvoid SquareRoutine::sequence_statemachine()[m[K’:
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:130:13:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_state_complete[m[K’ was not declared in this scope
+  130 |         if ([01;31m[Klast_state_complete[m[K)
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:134:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kcount_[m[K’ was not declared in this scope
+  134 |             switch ([01;31m[Kcount_[m[K)
+      |                     [01;31m[K^~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:[m[K In member function ‘[01m[Kvoid SquareRoutine::move_distance(double)[m[K’:
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:157:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kd_aim[m[K’ was not declared in this scope
+  157 |         [01;31m[Kd_aim[m[K = distance;
+      |         [01;31m[K^~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:158:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kx_init[m[K’ was not declared in this scope; did you mean ‘[01m[Ku_int[m[K’?
+  158 |         [01;31m[Kx_init[m[K = x_now;
+      |         [01;31m[K^~~~~~[m[K
+      |         [32m[Ku_int[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:158:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kx_now[m[K’ was not declared in this scope; did you mean ‘[01m[Know[m[K’?
+  158 |         x_init = [01;31m[Kx_now[m[K;
+      |                  [01;31m[K^~~~~[m[K
+      |                  [32m[Know[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:159:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ky_init[m[K’ was not declared in this scope; did you mean ‘[01m[Ku_int[m[K’?
+  159 |         [01;31m[Ky_init[m[K = y_now;
+      |         [01;31m[K^~~~~~[m[K
+      |         [32m[Ku_int[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:159:18:[m[K [01;31m[Kerror: [m[K‘[01m[Ky_now[m[K’ was not declared in this scope; did you mean ‘[01m[Know[m[K’?
+  159 |         y_init = [01;31m[Ky_now[m[K;
+      |                  [01;31m[K^~~~~[m[K
+      |                  [32m[Know[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:160:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcount_[m[K’ was not declared in this scope
+  160 |         [01;31m[Kcount_[m[K++;
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:161:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_action_[m[K’ was not declared in this scope
+  161 |         [01;31m[Kcurrent_action_[m[K = Action::MOVE;
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:161:27:[m[K [01;31m[Kerror: [m[K‘[01m[KAction[m[K’ has not been declared
+  161 |         current_action_ = [01;31m[KAction[m[K::MOVE;
+      |                           [01;31m[K^~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:[m[K In member function ‘[01m[Kvoid SquareRoutine::turn_angle(double)[m[K’:
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:166:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kth_aim[m[K’ was not declared in this scope
+  166 |         [01;31m[Kth_aim[m[K = angle;
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:167:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kth_init[m[K’ was not declared in this scope; did you mean ‘[01m[Ku_int[m[K’?
+  167 |         [01;31m[Kth_init[m[K = th_now;
+      |         [01;31m[K^~~~~~~[m[K
+      |         [32m[Ku_int[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:167:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kth_now[m[K’ was not declared in this scope
+  167 |         th_init = [01;31m[Kth_now[m[K;
+      |                   [01;31m[K^~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:168:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcount_[m[K’ was not declared in this scope
+  168 |         [01;31m[Kcount_[m[K++;
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:169:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_action_[m[K’ was not declared in this scope
+  169 |         [01;31m[Kcurrent_action_[m[K = Action::TURN;
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:169:27:[m[K [01;31m[Kerror: [m[K‘[01m[KAction[m[K’ has not been declared
+  169 |         current_action_ = [01;31m[KAction[m[K::TURN;
+      |                           [01;31m[K^~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:6[m[K:
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:[m[K In member function ‘[01m[Kvoid SquareRoutine::correct_with_wall(double)[m[K’:
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:181:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kfront_wall_dist[m[K’ was not declared in this scope
+  181 |         RCLCPP_INFO(this->get_logger(), "Front wall: %f", [01;31m[Kfront_wall_dist[m[K);
+      |                                                           [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:182:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kfront_wall_dist[m[K’ was not declared in this scope
+  182 |         double error = [01;31m[Kfront_wall_dist[m[K - target_dist; // positive if too far, negative if too close
+      |                        [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:185:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kx_vel[m[K’ was not declared in this scope
+  185 |                 [01;31m[Kx_vel[m[K = (error > 0) ? 0.05 : -0.05; // move forward if too far, backward if too close
+      |                 [01;31m[K^~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:191:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kcount_[m[K’ was not declared in this scope
+  191 |                 [01;31m[Kcount_[m[K++;
+      |                 [01;31m[K^~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:192:17:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_state_complete[m[K’ was not declared in this scope
+  192 |                 [01;31m[Klast_state_complete[m[K = 1;
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:202:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx_now[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  202 |     double [01;35m[Kx_now[m[K = 0, y_now = 0, x_init = 0, y_init = 0;
+      |            [01;35m[K^~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:202:23:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky_now[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  202 |     double x_now = 0, [01;35m[Ky_now[m[K = 0, x_init = 0, y_init = 0;
+      |                       [01;35m[K^~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:202:34:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx_init[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  202 |     double x_now = 0, y_now = 0, [01;35m[Kx_init[m[K = 0, y_init = 0;
+      |                                  [01;35m[K^~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:202:46:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky_init[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  202 |     double x_now = 0, y_now = 0, x_init = 0, [01;35m[Ky_init[m[K = 0;
+      |                                              [01;35m[K^~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:203:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kth_now[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  203 |     double [01;35m[Kth_now[m[K = 0, th_init = 0;
+      |            [01;35m[K^~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:203:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kth_init[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  203 |     double th_now = 0, [01;35m[Kth_init[m[K = 0;
+      |                        [01;35m[K^~~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:204:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kd_now[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  204 |     double [01;35m[Kd_now[m[K = 0, d_aim = 0, th_aim = 0;
+      |            [01;35m[K^~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:204:23:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kd_aim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  204 |     double d_now = 0, [01;35m[Kd_aim[m[K = 0, th_aim = 0;
+      |                       [01;35m[K^~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:204:34:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kth_aim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  204 |     double d_now = 0, d_aim = 0, [01;35m[Kth_aim[m[K = 0;
+      |                                  [01;35m[K^~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:205:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kq_x[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  205 |     double [01;35m[Kq_x[m[K = 0, q_y = 0, q_z = 0, q_w = 0;
+      |            [01;35m[K^~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:205:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kq_y[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  205 |     double q_x = 0, [01;35m[Kq_y[m[K = 0, q_z = 0, q_w = 0;
+      |                     [01;35m[K^~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:205:30:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kq_z[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  205 |     double q_x = 0, q_y = 0, [01;35m[Kq_z[m[K = 0, q_w = 0;
+      |                              [01;35m[K^~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:205:39:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kq_w[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  205 |     double q_x = 0, q_y = 0, q_z = 0, [01;35m[Kq_w[m[K = 0;
+      |                                       [01;35m[K^~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:207:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kx_vel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  207 |     double [01;35m[Kx_vel[m[K = 0.1;  // m/s
+      |            [01;35m[K^~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:208:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kth_vel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  208 |     double [01;35m[Kth_vel[m[K = 0.2; // rad/s
+      |            [01;35m[K^~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:210:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcount_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  210 |     size_t [01;35m[Kcount_[m[K = 0;
+      |            [01;35m[K^~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:211:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klast_state_complete[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  211 |     int [01;35m[Klast_state_complete[m[K = 1;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:214:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcurrent_action_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  214 |     Action [01;35m[Kcurrent_action_[m[K = Action::IDLE;
+      |            [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:[m[K At global scope:
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:227:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+  227 | }
+      |  [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/part1.dir/build.make:76: CMakeFiles/part1.dir/src/part1.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/part1.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

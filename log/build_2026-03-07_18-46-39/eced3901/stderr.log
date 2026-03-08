@@ -1,0 +1,7 @@
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:[m[K In member function ‘[01m[Kvoid SquareRoutine::lidar_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:48:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktarget_dist[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   48 |         double [01;35m[Ktarget_dist[m[K = 0.2;  // 20 cm
+      |                [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:49:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktolerance[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   49 |         double [01;35m[Ktolerance[m[K = 0.02;   // ±2 cm
+      |                [01;35m[K^~~~~~~~~[m[K

@@ -45,12 +45,12 @@ private:
     	int front_index = msg->ranges.size() / 2; // straight ahead
     	front_wall_dist = msg->ranges[front_index];
 
-    	double target_dist = 0.2;  // 20 cm
-    	double tolerance = 0.02;   // ±2 cm
+    	//double target_dist = 0.2;  // 20 cm
+    	//double tolerance = 0.02;   // ±2 cm
 
-    	geometry_msgs::msg::Twist cmd;
+    	//geometry_msgs::msg::Twist cmd;
 
-    	if (front_wall_dist > target_dist + tolerance) {
+    	/*if (front_wall_dist > target_dist + tolerance) {
         	cmd.linear.x = x_vel;  // move forward
         	cmd.angular.z = 0.0;
     	} else if (front_wall_dist < target_dist - tolerance) {
@@ -58,9 +58,10 @@ private:
         	cmd.angular.z = 0.0;
     	} else {
     		last_state_complete = 1; //move to next action 
-    	}
+    	}*/
 
-    publisher_->publish(cmd);
+    //publisher_->publish(cmd);
+    //sequence_statemachine();
     //RCLCPP_INFO(this->get_logger(), "Front wall: %f", front_wall_dist);
 }
     void topic_callback(const nav_msgs::msg::Odometry::SharedPtr msg)
@@ -89,18 +90,19 @@ private:
 
         if (current_action_ == Action::MOVE)
         {
+       	msg.linear.x = x_vel;
             double error = d_aim - d_now;
-            if (error > 0.01) // 1 cm tolerance
-            {
-                msg.linear.x = x_vel;
-                msg.angular.z = 0.0;
-            }
-            else
+            
+            
+            if (error < 0.01 || front_wall_dist < 0.32) // 1 cm tolerance
             {
                 msg.linear.x = 0.0;
+                msg.angular.z = 0.0;
                 current_action_ = Action::IDLE;
                 last_state_complete = 1;
+                sequence_statemachine();
             }
+           
         }
         else if (current_action_ == Action::TURN)
         {
@@ -178,15 +180,17 @@ private:
     void correct_with_wall(double target_dist) {
     	RCLCPP_INFO(this->get_logger(), "Front wall: %f", front_wall_dist);
     	double error = front_wall_dist - target_dist; // positive if too far, negative if too close
-    	if (std::fabs(error) > 0.07) { // 2 cm tolerance
+
+    	if (std::fabs(error) > 0.02) { // 2 cm tolerance
         	x_vel = (error > 0) ? 0.05 : -0.05; // move forward if too far, backward if too close
         	move_distance(error);        // use signed error
         	x_vel = 0.1;
 
-    	}else{
-    	last_state_complete = 1;
     	}
-    	
+    	else{
+    		count_++;
+    		last_state_complete = 1;
+    	}
 }
 
     // ROS members

@@ -1,0 +1,357 @@
+[0.000000] (-) TimerEvent: {}
+[0.000387] (eced3901) JobQueued: {'identifier': 'eced3901', 'dependencies': OrderedDict()}
+[0.000418] (eced3901) JobStarted: {'identifier': 'eced3901'}
+[0.008841] (eced3901) JobProgress: {'identifier': 'eced3901', 'progress': 'cmake'}
+[0.009394] (eced3901) JobProgress: {'identifier': 'eced3901', 'progress': 'build'}
+[0.010110] (eced3901) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/student/ros2_ws/src/eced3901/build/eced3901', '--', '-j4', '-l4'], 'cwd': '/home/student/ros2_ws/src/eced3901/build/eced3901', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'student'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/student'), ('OLDPWD', '/home/student/ros2_ws/src/eced3901/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '909'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/student/ros2_ws/src/eced3901/install:/home/student/ros2_ws/install:/home/student/imu_ws/install:/home/student/ydlidar_ros2_ws/install:/home/student/motor_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'student'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'student'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/student/ros2_ws/src/eced3901/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mini:@/tmp/.ICE-unix/877,unix/mini:/tmp/.ICE-unix/877'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/572d88e0_9213_4879_8873_7cb0542d8e00'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BUIPL3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.92'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '13'), ('AMENT_PREFIX_PATH', '/home/student/ros2_ws/src/eced3901/install/eced3901:/home/student/ros2_ws/install/eced3901:/home/student/imu_ws/install/bno055:/home/student/ydlidar_ros2_ws/install/ydlidar:/home/student/motor_ws/install/dalmotor:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/student/ros2_ws/src/eced3901/build/eced3901'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/student/imu_ws/install/bno055/lib/python3.10/site-packages:/home/student/motor_ws/install/dalmotor/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/student/ros2_ws/src/eced3901/install/eced3901:/home/student/ros2_ws/install/eced3901:/home/student/ydlidar_ros2_ws/install/ydlidar:/home/student/imu_ws/install/bno055:/home/student/motor_ws/install/dalmotor:/opt/ros/humble')]), 'shell': False}
+[0.093541] (eced3901) StdoutLine: {'line': b'[ 20%] Built target Demo\n'}
+[0.096542] (eced3901) StdoutLine: {'line': b'[ 40%] Built target Demo2\n'}
+[0.097595] (eced3901) StdoutLine: {'line': b'[ 60%] Built target dt1\n'}
+[0.099754] (-) TimerEvent: {}
+[0.100640] (eced3901) StdoutLine: {'line': b'[ 80%] Built target talker\n'}
+[0.106849] (eced3901) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target part1\x1b[0m\n'}
+[0.121832] (eced3901) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/part1.dir/src/part1.cpp.o\x1b[0m\n'}
+[0.199858] (-) TimerEvent: {}
+[0.300121] (-) TimerEvent: {}
+[0.400413] (-) TimerEvent: {}
+[0.500740] (-) TimerEvent: {}
+[0.601007] (-) TimerEvent: {}
+[0.701304] (-) TimerEvent: {}
+[0.801611] (-) TimerEvent: {}
+[0.901943] (-) TimerEvent: {}
+[1.002263] (-) TimerEvent: {}
+[1.102584] (-) TimerEvent: {}
+[1.202859] (-) TimerEvent: {}
+[1.303156] (-) TimerEvent: {}
+[1.403479] (-) TimerEvent: {}
+[1.503819] (-) TimerEvent: {}
+[1.604090] (-) TimerEvent: {}
+[1.704395] (-) TimerEvent: {}
+[1.804688] (-) TimerEvent: {}
+[1.905018] (-) TimerEvent: {}
+[2.005333] (-) TimerEvent: {}
+[2.105647] (-) TimerEvent: {}
+[2.205934] (-) TimerEvent: {}
+[2.306221] (-) TimerEvent: {}
+[2.406522] (-) TimerEvent: {}
+[2.467358] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:227:2:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 at end of input\n'}
+[2.467595] (eced3901) StderrLine: {'line': b'  227 | }\n'}
+[2.467675] (eced3901) StderrLine: {'line': b'      |  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.467742] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:19:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.467808] (eced3901) StderrLine: {'line': b'   19 | \x1b[01;36m\x1b[K{\x1b[m\x1b[K\n'}
+[2.467871] (eced3901) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[2.476278] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KSquareRoutine::SquareRoutine()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.476472] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:23:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksubscription_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_subscription_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.476553] (eced3901) StderrLine: {'line': b'   23 |         \x1b[01;31m\x1b[Ksubscription_\x1b[m\x1b[K = this->create_subscription<nav_msgs::msg::Odometry>(\n'}
+[2.476623] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.476697] (eced3901) StderrLine: {'line': b'      |         \x1b[32m\x1b[Krmw_subscription_t\x1b[m\x1b[K\n'}
+[2.506619] (-) TimerEvent: {}
+[2.527401] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:26:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.527589] (eced3901) StderrLine: {'line': b'   26 |         \x1b[01;31m\x1b[Kpublisher_\x1b[m\x1b[K = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);\n'}
+[2.527657] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.527716] (eced3901) StderrLine: {'line': b'      |         \x1b[32m\x1b[Krmw_publisher_t\x1b[m\x1b[K\n'}
+[2.535080] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:27:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktimer_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktimer_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.535306] (eced3901) StderrLine: {'line': b'   27 |         \x1b[01;31m\x1b[Ktimer_\x1b[m\x1b[K = this->create_wall_timer(100ms, std::bind(&SquareRoutine::timer_callback, this));\n'}
+[2.535387] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.535471] (eced3901) StderrLine: {'line': b'      |         \x1b[32m\x1b[Ktimer_t\x1b[m\x1b[K\n'}
+[2.547976] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:30:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcount_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.548154] (eced3901) StderrLine: {'line': b'   30 |         \x1b[01;31m\x1b[Kcount_\x1b[m\x1b[K = 0;\n'}
+[2.548220] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.557963] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:31:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klast_state_complete\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.558147] (eced3901) StderrLine: {'line': b'   31 |         \x1b[01;31m\x1b[Klast_state_complete\x1b[m\x1b[K = 1; // ready for first step\n'}
+[2.558224] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.566261] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:32:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_action_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.566522] (eced3901) StderrLine: {'line': b'   32 |         \x1b[01;31m\x1b[Kcurrent_action_\x1b[m\x1b[K = Action::IDLE;\n'}
+[2.566595] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.566655] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:32:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KAction\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.566715] (eced3901) StderrLine: {'line': b'   32 |         current_action_ = \x1b[01;31m\x1b[KAction\x1b[m\x1b[K::IDLE;\n'}
+[2.566772] (eced3901) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.573460] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:39:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klidar_sub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.573681] (eced3901) StderrLine: {'line': b'   39 |         \x1b[01;31m\x1b[Klidar_sub_\x1b[m\x1b[K = this->create_subscription<sensor_msgs::msg::LaserScan>("/scan",qos,std::bind(&SquareRoutine::lidar_callback, this, _1));\n'}
+[2.573778] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.606723] (-) TimerEvent: {}
+[2.626649] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SquareRoutine::lidar_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.626821] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:46:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfront_wall_dist\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.626895] (eced3901) StderrLine: {'line': b'   46 |         \x1b[01;31m\x1b[Kfront_wall_dist\x1b[m\x1b[K = msg->ranges[front_index];\n'}
+[2.626960] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.633723] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SquareRoutine::topic_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.633949] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:69:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kx_now\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Know\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.634045] (eced3901) StderrLine: {'line': b'   69 |         \x1b[01;31m\x1b[Kx_now\x1b[m\x1b[K = msg->pose.pose.position.x;\n'}
+[2.634111] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.634179] (eced3901) StderrLine: {'line': b'      |         \x1b[32m\x1b[Know\x1b[m\x1b[K\n'}
+[2.639125] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:70:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ky_now\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Know\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.639299] (eced3901) StderrLine: {'line': b'   70 |         \x1b[01;31m\x1b[Ky_now\x1b[m\x1b[K = msg->pose.pose.position.y;\n'}
+[2.639368] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.639441] (eced3901) StderrLine: {'line': b'      |         \x1b[32m\x1b[Know\x1b[m\x1b[K\n'}
+[2.643303] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:71:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kq_x\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.643462] (eced3901) StderrLine: {'line': b'   71 |         \x1b[01;31m\x1b[Kq_x\x1b[m\x1b[K = msg->pose.pose.orientation.x;\n'}
+[2.643544] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.647435] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:72:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kq_y\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.647598] (eced3901) StderrLine: {'line': b'   72 |         \x1b[01;31m\x1b[Kq_y\x1b[m\x1b[K = msg->pose.pose.orientation.y;\n'}
+[2.647667] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.652637] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:73:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kq_z\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.652799] (eced3901) StderrLine: {'line': b'   73 |         \x1b[01;31m\x1b[Kq_z\x1b[m\x1b[K = msg->pose.pose.orientation.z;\n'}
+[2.652862] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.656278] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:74:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kq_w\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.656478] (eced3901) StderrLine: {'line': b'   74 |         \x1b[01;31m\x1b[Kq_w\x1b[m\x1b[K = msg->pose.pose.orientation.w;\n'}
+[2.656554] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.660898] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SquareRoutine::timer_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.661042] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:82:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kq_x\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.661105] (eced3901) StderrLine: {'line': b'   82 |         tf2::Quaternion q(\x1b[01;31m\x1b[Kq_x\x1b[m\x1b[K, q_y, q_z, q_w);\n'}
+[2.661166] (eced3901) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.665292] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:82:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kq_y\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.665471] (eced3901) StderrLine: {'line': b'   82 |         tf2::Quaternion q(q_x, \x1b[01;31m\x1b[Kq_y\x1b[m\x1b[K, q_z, q_w);\n'}
+[2.665541] (eced3901) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.670042] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:82:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kq_z\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.670326] (eced3901) StderrLine: {'line': b'   82 |         tf2::Quaternion q(q_x, q_y, \x1b[01;31m\x1b[Kq_z\x1b[m\x1b[K, q_w);\n'}
+[2.670409] (eced3901) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.676483] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:82:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kq_w\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.676632] (eced3901) StderrLine: {'line': b'   82 |         tf2::Quaternion q(q_x, q_y, q_z, \x1b[01;31m\x1b[Kq_w\x1b[m\x1b[K);\n'}
+[2.676700] (eced3901) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.682216] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:86:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kth_now\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.682375] (eced3901) StderrLine: {'line': b'   86 |         \x1b[01;31m\x1b[Kth_now\x1b[m\x1b[K = yaw;\n'}
+[2.682478] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.687535] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:89:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kd_now\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Know\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.687670] (eced3901) StderrLine: {'line': b'   89 |         \x1b[01;31m\x1b[Kd_now\x1b[m\x1b[K = std::hypot(x_now - x_init, y_now - y_init);\n'}
+[2.687733] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.687793] (eced3901) StderrLine: {'line': b'      |         \x1b[32m\x1b[Know\x1b[m\x1b[K\n'}
+[2.692113] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:89:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kx_now\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Know\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.692221] (eced3901) StderrLine: {'line': b'   89 |         d_now = std::hypot(\x1b[01;31m\x1b[Kx_now\x1b[m\x1b[K - x_init, y_now - y_init);\n'}
+[2.692297] (eced3901) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.692358] (eced3901) StderrLine: {'line': b'      |                            \x1b[32m\x1b[Know\x1b[m\x1b[K\n'}
+[2.696832] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:89:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kx_init\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ku_int\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.696960] (eced3901) StderrLine: {'line': b'   89 |         d_now = std::hypot(x_now - \x1b[01;31m\x1b[Kx_init\x1b[m\x1b[K, y_now - y_init);\n'}
+[2.697022] (eced3901) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.697081] (eced3901) StderrLine: {'line': b'      |                                    \x1b[32m\x1b[Ku_int\x1b[m\x1b[K\n'}
+[2.701449] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:89:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ky_now\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Know\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.701610] (eced3901) StderrLine: {'line': b'   89 |         d_now = std::hypot(x_now - x_init, \x1b[01;31m\x1b[Ky_now\x1b[m\x1b[K - y_init);\n'}
+[2.701686] (eced3901) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.701753] (eced3901) StderrLine: {'line': b'      |                                            \x1b[32m\x1b[Know\x1b[m\x1b[K\n'}
+[2.706214] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:89:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ky_init\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ku_int\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.706359] (eced3901) StderrLine: {'line': b'   89 |         d_now = std::hypot(x_now - x_init, y_now - \x1b[01;31m\x1b[Ky_init\x1b[m\x1b[K);\n'}
+[2.706444] (eced3901) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.706517] (eced3901) StderrLine: {'line': b'      |                                                    \x1b[32m\x1b[Ku_int\x1b[m\x1b[K\n'}
+[2.706780] (-) TimerEvent: {}
+[2.714882] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:91:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_action_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.715033] (eced3901) StderrLine: {'line': b'   91 |         if (\x1b[01;31m\x1b[Kcurrent_action_\x1b[m\x1b[K == Action::MOVE)\n'}
+[2.715107] (eced3901) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.715174] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:91:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KAction\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.715239] (eced3901) StderrLine: {'line': b'   91 |         if (current_action_ == \x1b[01;31m\x1b[KAction\x1b[m\x1b[K::MOVE)\n'}
+[2.715302] (eced3901) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.719979] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:93:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kx_vel\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.720135] (eced3901) StderrLine: {'line': b'   93 |         msg.linear.x = \x1b[01;31m\x1b[Kx_vel\x1b[m\x1b[K;\n'}
+[2.720208] (eced3901) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.724610] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:94:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kd_aim\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.724757] (eced3901) StderrLine: {'line': b'   94 |             double error = \x1b[01;31m\x1b[Kd_aim\x1b[m\x1b[K - d_now;\n'}
+[2.724836] (eced3901) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.732708] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:97:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfront_wall_dist\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.732918] (eced3901) StderrLine: {'line': b'   97 |             if (error < 0.01 || \x1b[01;31m\x1b[Kfront_wall_dist\x1b[m\x1b[K < 0.32) // 1 cm tolerance\n'}
+[2.732993] (eced3901) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.733057] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:101:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KAction\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.733119] (eced3901) StderrLine: {'line': b'  101 |                 current_action_ = \x1b[01;31m\x1b[KAction\x1b[m\x1b[K::IDLE;\n'}
+[2.733179] (eced3901) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.743381] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:102:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klast_state_complete\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.743583] (eced3901) StderrLine: {'line': b'  102 |                 \x1b[01;31m\x1b[Klast_state_complete\x1b[m\x1b[K = 1;\n'}
+[2.743650] (eced3901) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.743707] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:107:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KAction\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.743764] (eced3901) StderrLine: {'line': b'  107 |         else if (current_action_ == \x1b[01;31m\x1b[KAction\x1b[m\x1b[K::TURN)\n'}
+[2.743819] (eced3901) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.748708] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:109:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kth_init\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ku_int\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.748882] (eced3901) StderrLine: {'line': b'  109 |             double angle_turned = wrap_angle(th_now - \x1b[01;31m\x1b[Kth_init\x1b[m\x1b[K);\n'}
+[2.748952] (eced3901) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.749014] (eced3901) StderrLine: {'line': b'      |                                                       \x1b[32m\x1b[Ku_int\x1b[m\x1b[K\n'}
+[2.754186] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:110:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kth_aim\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.754364] (eced3901) StderrLine: {'line': b'  110 |             double remaining = \x1b[01;31m\x1b[Kth_aim\x1b[m\x1b[K - angle_turned;\n'}
+[2.754448] (eced3901) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.759678] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:114:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kth_vel\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.759846] (eced3901) StderrLine: {'line': b'  114 |                 msg.angular.z = (remaining > 0 ? \x1b[01;31m\x1b[Kth_vel\x1b[m\x1b[K : -th_vel);\n'}
+[2.759933] (eced3901) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.759992] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:119:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KAction\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.760049] (eced3901) StderrLine: {'line': b'  119 |                 current_action_ = \x1b[01;31m\x1b[KAction\x1b[m\x1b[K::IDLE;\n'}
+[2.760104] (eced3901) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.769612] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:120:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klast_state_complete\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.769793] (eced3901) StderrLine: {'line': b'  120 |                 \x1b[01;31m\x1b[Klast_state_complete\x1b[m\x1b[K = 1;\n'}
+[2.769855] (eced3901) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.777306] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:124:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.777508] (eced3901) StderrLine: {'line': b'  124 |         \x1b[01;31m\x1b[Kpublisher_\x1b[m\x1b[K->publish(msg);\n'}
+[2.777581] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.777643] (eced3901) StderrLine: {'line': b'      |         \x1b[32m\x1b[Krmw_publisher_t\x1b[m\x1b[K\n'}
+[2.787767] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SquareRoutine::sequence_statemachine()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.787932] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:130:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klast_state_complete\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.788009] (eced3901) StderrLine: {'line': b'  130 |         if (\x1b[01;31m\x1b[Klast_state_complete\x1b[m\x1b[K)\n'}
+[2.788074] (eced3901) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.792771] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:134:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcount_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.792912] (eced3901) StderrLine: {'line': b'  134 |             switch (\x1b[01;31m\x1b[Kcount_\x1b[m\x1b[K)\n'}
+[2.792985] (eced3901) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.802368] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SquareRoutine::move_distance(double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.802550] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:157:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kd_aim\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.802628] (eced3901) StderrLine: {'line': b'  157 |         \x1b[01;31m\x1b[Kd_aim\x1b[m\x1b[K = distance;\n'}
+[2.802687] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.806861] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:158:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kx_init\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ku_int\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.807016] (-) TimerEvent: {}
+[2.807116] (eced3901) StderrLine: {'line': b'  158 |         \x1b[01;31m\x1b[Kx_init\x1b[m\x1b[K = x_now;\n'}
+[2.807197] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.807261] (eced3901) StderrLine: {'line': b'      |         \x1b[32m\x1b[Ku_int\x1b[m\x1b[K\n'}
+[2.811354] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:158:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kx_now\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Know\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.811560] (eced3901) StderrLine: {'line': b'  158 |         x_init = \x1b[01;31m\x1b[Kx_now\x1b[m\x1b[K;\n'}
+[2.811634] (eced3901) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.811698] (eced3901) StderrLine: {'line': b'      |                  \x1b[32m\x1b[Know\x1b[m\x1b[K\n'}
+[2.815934] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:159:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ky_init\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ku_int\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.816078] (eced3901) StderrLine: {'line': b'  159 |         \x1b[01;31m\x1b[Ky_init\x1b[m\x1b[K = y_now;\n'}
+[2.816147] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.816210] (eced3901) StderrLine: {'line': b'      |         \x1b[32m\x1b[Ku_int\x1b[m\x1b[K\n'}
+[2.820320] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:159:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ky_now\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Know\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.820487] (eced3901) StderrLine: {'line': b'  159 |         y_init = \x1b[01;31m\x1b[Ky_now\x1b[m\x1b[K;\n'}
+[2.820553] (eced3901) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.820618] (eced3901) StderrLine: {'line': b'      |                  \x1b[32m\x1b[Know\x1b[m\x1b[K\n'}
+[2.825087] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:160:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcount_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.825236] (eced3901) StderrLine: {'line': b'  160 |         \x1b[01;31m\x1b[Kcount_\x1b[m\x1b[K++;\n'}
+[2.825309] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.832997] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:161:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_action_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.833209] (eced3901) StderrLine: {'line': b'  161 |         \x1b[01;31m\x1b[Kcurrent_action_\x1b[m\x1b[K = Action::MOVE;\n'}
+[2.833303] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.833369] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:161:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KAction\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.833440] (eced3901) StderrLine: {'line': b'  161 |         current_action_ = \x1b[01;31m\x1b[KAction\x1b[m\x1b[K::MOVE;\n'}
+[2.833516] (eced3901) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.838733] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SquareRoutine::turn_angle(double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.838907] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:166:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kth_aim\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.838988] (eced3901) StderrLine: {'line': b'  166 |         \x1b[01;31m\x1b[Kth_aim\x1b[m\x1b[K = angle;\n'}
+[2.839045] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.843749] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:167:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kth_init\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ku_int\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.843907] (eced3901) StderrLine: {'line': b'  167 |         \x1b[01;31m\x1b[Kth_init\x1b[m\x1b[K = th_now;\n'}
+[2.843978] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.844042] (eced3901) StderrLine: {'line': b'      |         \x1b[32m\x1b[Ku_int\x1b[m\x1b[K\n'}
+[2.848700] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:167:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kth_now\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.848862] (eced3901) StderrLine: {'line': b'  167 |         th_init = \x1b[01;31m\x1b[Kth_now\x1b[m\x1b[K;\n'}
+[2.848925] (eced3901) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.853728] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:168:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcount_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.853892] (eced3901) StderrLine: {'line': b'  168 |         \x1b[01;31m\x1b[Kcount_\x1b[m\x1b[K++;\n'}
+[2.853956] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.862011] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:169:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_action_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.862194] (eced3901) StderrLine: {'line': b'  169 |         \x1b[01;31m\x1b[Kcurrent_action_\x1b[m\x1b[K = Action::TURN;\n'}
+[2.862263] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.862324] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:169:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KAction\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.862386] (eced3901) StderrLine: {'line': b'  169 |         current_action_ = \x1b[01;31m\x1b[KAction\x1b[m\x1b[K::TURN;\n'}
+[2.862470] (eced3901) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.871302] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.871610] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.871698] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[2.871766] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.871829] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[2.871891] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.871956] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.872050] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[2.872113] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.872177] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.872239] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[2.872302] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:6\x1b[m\x1b[K:\n'}
+[2.872364] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SquareRoutine::correct_with_wall(double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.872438] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:181:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfront_wall_dist\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.872520] (eced3901) StderrLine: {'line': b'  181 |         RCLCPP_INFO(this->get_logger(), "Front wall: %f", \x1b[01;31m\x1b[Kfront_wall_dist\x1b[m\x1b[K);\n'}
+[2.872591] (eced3901) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.881180] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:182:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfront_wall_dist\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.881349] (eced3901) StderrLine: {'line': b'  182 |         double error = \x1b[01;31m\x1b[Kfront_wall_dist\x1b[m\x1b[K - target_dist; // positive if too far, negative if too close\n'}
+[2.881414] (eced3901) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.886349] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:185:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kx_vel\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.886549] (eced3901) StderrLine: {'line': b'  185 |                 \x1b[01;31m\x1b[Kx_vel\x1b[m\x1b[K = (error > 0) ? 0.05 : -0.05; // move forward if too far, backward if too close\n'}
+[2.886669] (eced3901) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.891279] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:191:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcount_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.891418] (eced3901) StderrLine: {'line': b'  191 |                 \x1b[01;31m\x1b[Kcount_\x1b[m\x1b[K++;\n'}
+[2.891508] (eced3901) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.900894] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:192:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klast_state_complete\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.901030] (eced3901) StderrLine: {'line': b'  192 |                 \x1b[01;31m\x1b[Klast_state_complete\x1b[m\x1b[K = 1;\n'}
+[2.901100] (eced3901) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.903823] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:202:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kx_now\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.903986] (eced3901) StderrLine: {'line': b'  202 |     double \x1b[01;35m\x1b[Kx_now\x1b[m\x1b[K = 0, y_now = 0, x_init = 0, y_init = 0;\n'}
+[2.904061] (eced3901) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.904128] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:202:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ky_now\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.904196] (eced3901) StderrLine: {'line': b'  202 |     double x_now = 0, \x1b[01;35m\x1b[Ky_now\x1b[m\x1b[K = 0, x_init = 0, y_init = 0;\n'}
+[2.904260] (eced3901) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.904324] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:202:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kx_init\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.904402] (eced3901) StderrLine: {'line': b'  202 |     double x_now = 0, y_now = 0, \x1b[01;35m\x1b[Kx_init\x1b[m\x1b[K = 0, y_init = 0;\n'}
+[2.904481] (eced3901) StderrLine: {'line': b'      |                                  \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.904542] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:202:46:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ky_init\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.904608] (eced3901) StderrLine: {'line': b'  202 |     double x_now = 0, y_now = 0, x_init = 0, \x1b[01;35m\x1b[Ky_init\x1b[m\x1b[K = 0;\n'}
+[2.904677] (eced3901) StderrLine: {'line': b'      |                                              \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.904736] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:203:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kth_now\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.904797] (eced3901) StderrLine: {'line': b'  203 |     double \x1b[01;35m\x1b[Kth_now\x1b[m\x1b[K = 0, th_init = 0;\n'}
+[2.904856] (eced3901) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.904914] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:203:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kth_init\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.904975] (eced3901) StderrLine: {'line': b'  203 |     double th_now = 0, \x1b[01;35m\x1b[Kth_init\x1b[m\x1b[K = 0;\n'}
+[2.905034] (eced3901) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.905094] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:204:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kd_now\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.905155] (eced3901) StderrLine: {'line': b'  204 |     double \x1b[01;35m\x1b[Kd_now\x1b[m\x1b[K = 0, d_aim = 0, th_aim = 0;\n'}
+[2.905214] (eced3901) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.905279] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:204:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kd_aim\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.905339] (eced3901) StderrLine: {'line': b'  204 |     double d_now = 0, \x1b[01;35m\x1b[Kd_aim\x1b[m\x1b[K = 0, th_aim = 0;\n'}
+[2.905399] (eced3901) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.905467] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:204:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kth_aim\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.905536] (eced3901) StderrLine: {'line': b'  204 |     double d_now = 0, d_aim = 0, \x1b[01;35m\x1b[Kth_aim\x1b[m\x1b[K = 0;\n'}
+[2.905600] (eced3901) StderrLine: {'line': b'      |                                  \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.905659] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:205:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kq_x\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.905721] (eced3901) StderrLine: {'line': b'  205 |     double \x1b[01;35m\x1b[Kq_x\x1b[m\x1b[K = 0, q_y = 0, q_z = 0, q_w = 0;\n'}
+[2.905775] (eced3901) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.905828] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:205:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kq_y\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.905889] (eced3901) StderrLine: {'line': b'  205 |     double q_x = 0, \x1b[01;35m\x1b[Kq_y\x1b[m\x1b[K = 0, q_z = 0, q_w = 0;\n'}
+[2.905942] (eced3901) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.905994] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:205:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kq_z\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.906049] (eced3901) StderrLine: {'line': b'  205 |     double q_x = 0, q_y = 0, \x1b[01;35m\x1b[Kq_z\x1b[m\x1b[K = 0, q_w = 0;\n'}
+[2.906103] (eced3901) StderrLine: {'line': b'      |                              \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.906161] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:205:39:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kq_w\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.906216] (eced3901) StderrLine: {'line': b'  205 |     double q_x = 0, q_y = 0, q_z = 0, \x1b[01;35m\x1b[Kq_w\x1b[m\x1b[K = 0;\n'}
+[2.906269] (eced3901) StderrLine: {'line': b'      |                                       \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.906322] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:207:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kx_vel\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.906380] (eced3901) StderrLine: {'line': b'  207 |     double \x1b[01;35m\x1b[Kx_vel\x1b[m\x1b[K = 0.1;  // m/s\n'}
+[2.906440] (eced3901) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.906511] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:208:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kth_vel\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.906572] (eced3901) StderrLine: {'line': b'  208 |     double \x1b[01;35m\x1b[Kth_vel\x1b[m\x1b[K = 0.2; // rad/s\n'}
+[2.906630] (eced3901) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.906689] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:210:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kcount_\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.906749] (eced3901) StderrLine: {'line': b'  210 |     size_t \x1b[01;35m\x1b[Kcount_\x1b[m\x1b[K = 0;\n'}
+[2.906807] (eced3901) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.906865] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:211:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Klast_state_complete\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.906927] (eced3901) StderrLine: {'line': b'  211 |     int \x1b[01;35m\x1b[Klast_state_complete\x1b[m\x1b[K = 1;\n'}
+[2.906986] (eced3901) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.907042] (-) TimerEvent: {}
+[2.907149] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:214:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kcurrent_action_\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.907233] (eced3901) StderrLine: {'line': b'  214 |     Action \x1b[01;35m\x1b[Kcurrent_action_\x1b[m\x1b[K = Action::IDLE;\n'}
+[2.907297] (eced3901) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.907892] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.908014] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:227:2:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id at end of input\n'}
+[2.908083] (eced3901) StderrLine: {'line': b'  227 | }\n'}
+[2.908145] (eced3901) StderrLine: {'line': b'      |  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.007150] (-) TimerEvent: {}
+[3.107472] (-) TimerEvent: {}
+[3.207807] (-) TimerEvent: {}
+[3.308109] (-) TimerEvent: {}
+[3.408420] (-) TimerEvent: {}
+[3.508739] (-) TimerEvent: {}
+[3.609038] (-) TimerEvent: {}
+[3.709307] (-) TimerEvent: {}
+[3.809616] (-) TimerEvent: {}
+[3.909887] (-) TimerEvent: {}
+[4.010214] (-) TimerEvent: {}
+[4.110536] (-) TimerEvent: {}
+[4.210816] (-) TimerEvent: {}
+[4.311101] (-) TimerEvent: {}
+[4.411413] (-) TimerEvent: {}
+[4.511736] (-) TimerEvent: {}
+[4.612023] (-) TimerEvent: {}
+[4.712333] (-) TimerEvent: {}
+[4.812666] (-) TimerEvent: {}
+[4.912950] (-) TimerEvent: {}
+[5.013256] (-) TimerEvent: {}
+[5.113571] (-) TimerEvent: {}
+[5.213858] (-) TimerEvent: {}
+[5.314159] (-) TimerEvent: {}
+[5.414473] (-) TimerEvent: {}
+[5.514789] (-) TimerEvent: {}
+[5.615101] (-) TimerEvent: {}
+[5.715412] (-) TimerEvent: {}
+[5.815735] (-) TimerEvent: {}
+[5.866947] (eced3901) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/part1.dir/build.make:76: CMakeFiles/part1.dir/src/part1.cpp.o] Error 1\n'}
+[5.867188] (eced3901) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/part1.dir/all] Error 2\n'}
+[5.867307] (eced3901) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.869266] (eced3901) CommandEnded: {'returncode': 2}
+[5.883211] (eced3901) JobEnded: {'identifier': 'eced3901', 'rc': 2}
+[5.893784] (-) EventReactorShutdown: {}
