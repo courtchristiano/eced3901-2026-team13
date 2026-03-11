@@ -1,4 +1,3 @@
-
 #include <chrono>
 #include <functional>
 #include <memory>
@@ -100,7 +99,7 @@ private:
                 msg.angular.z = 0.0;
                 current_action_ = Action::IDLE;
                 last_state_complete = 1;
-                sequence_statemachine();
+                //sequence_statemachine();
             }
            
         }
@@ -133,20 +132,20 @@ private:
 
             switch (count_)
             {
-            case 0: move_distance(1.2192); RCLCPP_INFO(this->get_logger(), "Case 0");break; // 4 ft forward
-            case 1: correct_with_wall(0.32); RCLCPP_INFO(this->get_logger(), "Case 1");break;
-            case 2: turn_angle(M_PI / 2); RCLCPP_INFO(this->get_logger(), "Case 2");break;  // turn left 90°
-            case 3: move_distance(0.3068); RCLCPP_INFO(this->get_logger(), "Case 3");break; // 1 ft forward
-            case 4: correct_with_wall(0.32); RCLCPP_INFO(this->get_logger(), "Case 4");break;
-            case 5: turn_angle(-M_PI / 2); RCLCPP_INFO(this->get_logger(), "Case 5");break; // turn right 90°
-            case 6: move_distance(1.2192); RCLCPP_INFO(this->get_logger(), "Case 6");break; // 4 ft forward
-            case 7: correct_with_wall(0.32); RCLCPP_INFO(this->get_logger(), "Case 7");break;
-            case 8: turn_angle(-M_PI / 2); RCLCPP_INFO(this->get_logger(), "Case 8");break; // turn right 90°
-            case 9: move_distance(0.35); RCLCPP_INFO(this->get_logger(), "Case 9");break; // 1 ft forward
-            case 10: correct_with_wall(0.32); RCLCPP_INFO(this->get_logger(), "Case 10");break;
-            case 11: turn_angle(M_PI / 2); RCLCPP_INFO(this->get_logger(), "Case 11");break;  // turn left 90°
-            case 12: move_distance(1.2192); RCLCPP_INFO(this->get_logger(), "Case 12");break; // 4 ft final leg
-            case 13: correct_with_wall(0.32); RCLCPP_INFO(this->get_logger(), "Case 13");break;
+            case 0: move_distance(1.2192); RCLCPP_INFO(this->get_logger(), "Case 0"); break; // 4 ft forward
+            case 1: correct_with_wall(0.32); RCLCPP_INFO(this->get_logger(), "Case 1"); break;
+            case 2: turn_angle(M_PI / 2); RCLCPP_INFO(this->get_logger(), "Case 2"); break;  // turn left 90°
+            case 3: move_distance(0.3068); RCLCPP_INFO(this->get_logger(), "Case 3"); break; // 1 ft forward
+            case 4: correct_with_wall(0.32); RCLCPP_INFO(this->get_logger(), "Case 4"); break;
+            case 5: turn_angle(-M_PI / 2); RCLCPP_INFO(this->get_logger(), "Case 5"); break; // turn right 90°
+            case 6: move_distance(1.2192); RCLCPP_INFO(this->get_logger(), "Case 6"); break; // 4 ft forward
+            case 7: correct_with_wall(0.32); RCLCPP_INFO(this->get_logger(), "Case 7"); break;
+            case 8: turn_angle(-M_PI / 2); RCLCPP_INFO(this->get_logger(), "Case 8"); break; // turn right 90°
+            case 9: move_distance(0.35); RCLCPP_INFO(this->get_logger(), "Case 9"); break; // 1 ft forward
+            case 10: correct_with_wall(0.32); RCLCPP_INFO(this->get_logger(), "Case 10"); break;
+            case 11: turn_angle(M_PI / 2); RCLCPP_INFO(this->get_logger(), "Case 11"); break;  // turn left 90°
+            case 12: move_distance(1.2192); RCLCPP_INFO(this->get_logger(), "Case 12"); break; // 4 ft final leg
+            case 13: correct_with_wall(0.32); RCLCPP_INFO(this->get_logger(), "Case 13"); break;
             default: break; // done
             }
         }
