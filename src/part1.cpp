@@ -42,8 +42,26 @@ public:
 private:
     //added method to store front wall distance
     void lidar_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg) {
-    	int front_index = msg->ranges.size() / 2; // straight ahead
-    	front_wall_dist = msg->ranges[front_index];
+    	//int front_index = msg->ranges.size() / 2; // straight ahead
+    	//front_wall_dist = msg->ranges[front_index];
+
+		int front_index = msg->ranges.size()/2;
+		int window = 3;
+		std::vector<float> front_window;
+
+		int start_idx = std::max(0, front_index - window);
+		int end_idx = std::min((int)msg->ranges.size() - 1, front_index + window);
+
+		for(int i = start_idx; i <= end_idx; ++i){
+			if(msg->ranges[i] >= msg->range_min && msg->ranges[i] <= msg->range_max){
+				front_window.push_back(msg->ranges[i]);
+			}
+		}
+			if(!front_window.empty()){
+				std::sort(front_window.begin(), front_window.end());
+				front_wall_dist=front_window[front_window.size()/2];
+			}
+	}
 
     	//double target_dist = 0.2;  // 20 cm
     	//double tolerance = 0.02;   // ±2 cm
