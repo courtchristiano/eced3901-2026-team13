@@ -1,0 +1,7 @@
+[ 50%] Built target dt1
+[ 50%] Built target Demo
+[ 50%] Built target talker
+[ 66%] Built target Demo2
+[35m[1mConsolidate compiler generated dependencies of target part1[0m
+[ 83%] Built target openo
+[ 91%] [32mBuilding CXX object CMakeFiles/part1.dir/src/part1.cpp.o[0m

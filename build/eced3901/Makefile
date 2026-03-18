@@ -262,6 +262,19 @@ part1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/part1.dir/build.make CMakeFiles/part1.dir/build
 .PHONY : part1/fast
 
+#=============================================================================
+# Target rules for targets named openo
+
+# Build rule for target.
+openo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openo
+.PHONY : openo
+
+# fast build rule for target.
+openo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openo.dir/build.make CMakeFiles/openo.dir/build
+.PHONY : openo/fast
+
 src/Demo.o: src/Demo.cpp.o
 .PHONY : src/Demo.o
 
@@ -334,6 +347,30 @@ src/eced3901_dt1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dt1.dir/build.make CMakeFiles/dt1.dir/src/eced3901_dt1.cpp.s
 .PHONY : src/eced3901_dt1.cpp.s
 
+src/openo.o: src/openo.cpp.o
+.PHONY : src/openo.o
+
+# target to build an object file
+src/openo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openo.dir/build.make CMakeFiles/openo.dir/src/openo.cpp.o
+.PHONY : src/openo.cpp.o
+
+src/openo.i: src/openo.cpp.i
+.PHONY : src/openo.i
+
+# target to preprocess a source file
+src/openo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openo.dir/build.make CMakeFiles/openo.dir/src/openo.cpp.i
+.PHONY : src/openo.cpp.i
+
+src/openo.s: src/openo.cpp.s
+.PHONY : src/openo.s
+
+# target to generate assembly for a file
+src/openo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openo.dir/build.make CMakeFiles/openo.dir/src/openo.cpp.s
+.PHONY : src/openo.cpp.s
+
 src/part1.o: src/part1.cpp.o
 .PHONY : src/part1.o
 
@@ -400,6 +437,7 @@ help:
 	@echo "... Demo"
 	@echo "... Demo2"
 	@echo "... dt1"
+	@echo "... openo"
 	@echo "... part1"
 	@echo "... talker"
 	@echo "... src/Demo.o"
@@ -411,6 +449,9 @@ help:
 	@echo "... src/eced3901_dt1.o"
 	@echo "... src/eced3901_dt1.i"
 	@echo "... src/eced3901_dt1.s"
+	@echo "... src/openo.o"
+	@echo "... src/openo.i"
+	@echo "... src/openo.s"
 	@echo "... src/part1.o"
 	@echo "... src/part1.i"
 	@echo "... src/part1.s"

@@ -36,25 +36,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 39,
+				"line" : 42,
 				"parent" : 0
 			},
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 49,
+				"line" : 53,
 				"parent" : 0
 			},
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 59,
+				"line" : 63,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 82,
+				"line" : 86,
 				"parent" : 0
 			},
 			{
@@ -244,7 +244,7 @@
 				"talker"
 			],
 			"targetId" : "talker::@6890427a1f51a3e7e1df",
-			"targetIndex" : 5,
+			"targetIndex" : 6,
 			"type" : "target"
 		},
 		{
@@ -292,6 +292,18 @@
 				"part1"
 			],
 			"targetId" : "part1::@6890427a1f51a3e7e1df",
+			"targetIndex" : 5,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/eced3901",
+			"paths" : 
+			[
+				"openo"
+			],
+			"targetId" : "openo::@6890427a1f51a3e7e1df",
 			"targetIndex" : 4,
 			"type" : "target"
 		},

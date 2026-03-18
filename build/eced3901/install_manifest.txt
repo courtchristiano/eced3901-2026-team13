@@ -3,6 +3,7 @@
 /home/student/ros2_ws/src/eced3901/install/eced3901/lib/eced3901/Demo2
 /home/student/ros2_ws/src/eced3901/install/eced3901/lib/eced3901/Demo
 /home/student/ros2_ws/src/eced3901/install/eced3901/lib/eced3901/part1
+/home/student/ros2_ws/src/eced3901/install/eced3901/lib/eced3901/openo
 /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/config/ekf.yaml
 /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/lab3.launch.py
 /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/lab4a.launch.py
@@ -74,6 +75,7 @@
 /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/log/build_2026-03-04_13-17-03/logger_all.log
 /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/log/build_2026-03-04_13-17-03/events.log
 /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/openo.cpp
+/home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/fulllidar
 /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/Test3.cpp
 /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/Demo2.cpp
 /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/Test1.cpp

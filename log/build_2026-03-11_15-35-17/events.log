@@ -1,0 +1,922 @@
+[0.000000] (-) TimerEvent: {}
+[0.000257] (eced3901) JobQueued: {'identifier': 'eced3901', 'dependencies': OrderedDict()}
+[0.000630] (eced3901) JobStarted: {'identifier': 'eced3901'}
+[0.012514] (eced3901) JobProgress: {'identifier': 'eced3901', 'progress': 'cmake'}
+[0.013206] (eced3901) JobProgress: {'identifier': 'eced3901', 'progress': 'build'}
+[0.013971] (eced3901) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/student/ros2_ws/src/eced3901/build/eced3901', '--', '-j4', '-l4'], 'cwd': '/home/student/ros2_ws/src/eced3901/build/eced3901', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'student'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/student'), ('OLDPWD', '/home/student'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '892'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/student/ros2_ws/install:/home/student/imu_ws/install:/home/student/ydlidar_ros2_ws/install:/home/student/motor_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'student'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'student'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/student/ros2_ws/src/eced3901/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mini:@/tmp/.ICE-unix/871,unix/mini:/tmp/.ICE-unix/871'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6522770e_4311_40cd_b19e_c573cf89dbb5'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_CA.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XUS9L3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '13'), ('AMENT_PREFIX_PATH', '/home/student/ros2_ws/install/eced3901:/home/student/imu_ws/install/bno055:/home/student/ydlidar_ros2_ws/install/ydlidar:/home/student/motor_ws/install/dalmotor:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/student/ros2_ws/src/eced3901/build/eced3901'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/student/imu_ws/install/bno055/lib/python3.10/site-packages:/home/student/motor_ws/install/dalmotor/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/student/ros2_ws/install/eced3901:/home/student/ydlidar_ros2_ws/install/ydlidar:/home/student/imu_ws/install/bno055:/home/student/motor_ws/install/dalmotor:/opt/ros/humble')]), 'shell': False}
+[0.065739] (eced3901) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099835] (-) TimerEvent: {}
+[0.200082] (-) TimerEvent: {}
+[0.206967] (eced3901) StdoutLine: {'line': b'-- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.241407] (eced3901) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.244280] (eced3901) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.251098] (eced3901) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.264150] (eced3901) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.276880] (eced3901) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.300195] (-) TimerEvent: {}
+[0.311529] (eced3901) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.313214] (eced3901) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.400300] (-) TimerEvent: {}
+[0.411887] (eced3901) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.468879] (eced3901) StdoutLine: {'line': b'-- Found rclpy: 3.3.19 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[0.469284] (eced3901) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.482041] (eced3901) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.498655] (eced3901) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.500364] (-) TimerEvent: {}
+[0.515732] (eced3901) StdoutLine: {'line': b'-- Found tf2: 0.25.18 (/opt/ros/humble/share/tf2/cmake)\n'}
+[0.529753] (eced3901) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.600510] (-) TimerEvent: {}
+[0.676974] (eced3901) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.677226] (eced3901) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.677304] (eced3901) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.690155] (eced3901) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.700652] (-) TimerEvent: {}
+[0.710023] (eced3901) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.719684] (eced3901) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.793443] (eced3901) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.793628] (eced3901) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.800752] (-) TimerEvent: {}
+[0.804905] (eced3901) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.806021] (eced3901) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.832843] (eced3901) StdoutLine: {'line': b'-- Generating done\n'}
+[0.843443] (eced3901) StdoutLine: {'line': b'-- Build files have been written to: /home/student/ros2_ws/src/eced3901/build/eced3901\n'}
+[0.873884] (eced3901) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target talker\x1b[0m\n'}
+[0.874103] (eced3901) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target Demo2\x1b[0m\n'}
+[0.874199] (eced3901) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target dt1\x1b[0m\n'}
+[0.874279] (eced3901) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target Demo\x1b[0m\n'}
+[0.895649] (eced3901) StdoutLine: {'line': b'[ 33%] Built target talker\n'}
+[0.896838] (eced3901) StdoutLine: {'line': b'[ 33%] Built target dt1\n'}
+[0.897024] (eced3901) StdoutLine: {'line': b'[ 50%] Built target Demo2\n'}
+[0.897112] (eced3901) StdoutLine: {'line': b'[ 66%] Built target Demo\n'}
+[0.900857] (-) TimerEvent: {}
+[0.906657] (eced3901) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target part1\x1b[0m\n'}
+[0.915446] (eced3901) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/openo.dir/src/openo.cpp.o\x1b[0m\n'}
+[0.922177] (eced3901) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/part1.dir/src/part1.cpp.o\x1b[0m\n'}
+[1.000962] (-) TimerEvent: {}
+[1.101237] (-) TimerEvent: {}
+[1.201534] (-) TimerEvent: {}
+[1.301874] (-) TimerEvent: {}
+[1.402206] (-) TimerEvent: {}
+[1.502553] (-) TimerEvent: {}
+[1.602877] (-) TimerEvent: {}
+[1.703173] (-) TimerEvent: {}
+[1.803492] (-) TimerEvent: {}
+[1.903809] (-) TimerEvent: {}
+[2.004123] (-) TimerEvent: {}
+[2.104453] (-) TimerEvent: {}
+[2.204783] (-) TimerEvent: {}
+[2.305079] (-) TimerEvent: {}
+[2.405406] (-) TimerEvent: {}
+[2.505707] (-) TimerEvent: {}
+[2.606010] (-) TimerEvent: {}
+[2.706298] (-) TimerEvent: {}
+[2.806614] (-) TimerEvent: {}
+[2.906909] (-) TimerEvent: {}
+[3.007207] (-) TimerEvent: {}
+[3.107553] (-) TimerEvent: {}
+[3.207840] (-) TimerEvent: {}
+[3.308138] (-) TimerEvent: {}
+[3.408447] (-) TimerEvent: {}
+[3.508769] (-) TimerEvent: {}
+[3.513032] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:83:2:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 after class definition\n'}
+[3.513245] (eced3901) StderrLine: {'line': b'   83 | }\n'}
+[3.513320] (eced3901) StderrLine: {'line': b'      |  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.513384] (eced3901) StderrLine: {'line': b'      |  \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[3.523348] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KSquareRoutine::SquareRoutine()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.523580] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:22:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksubscription_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_subscription_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.523674] (eced3901) StderrLine: {'line': b'   22 |         \x1b[01;31m\x1b[Ksubscription_\x1b[m\x1b[K = this->create_subscription<nav_msgs::msg::Odometry>(\n'}
+[3.523755] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.523824] (eced3901) StderrLine: {'line': b'      |         \x1b[32m\x1b[Krmw_subscription_t\x1b[m\x1b[K\n'}
+[3.523980] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:23:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktopic_callback\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[KSquareRoutine\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.524108] (eced3901) StderrLine: {'line': b'   23 |             "odom", 10, std::bind(&SquareRoutine::\x1b[01;31m\x1b[Ktopic_callback\x1b[m\x1b[K, this, _1));\n'}
+[3.524184] (eced3901) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.530310] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:25:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.530499] (eced3901) StderrLine: {'line': b'   25 |         \x1b[01;31m\x1b[Kpublisher_\x1b[m\x1b[K = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);\n'}
+[3.530593] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.530664] (eced3901) StderrLine: {'line': b'      |         \x1b[32m\x1b[Krmw_publisher_t\x1b[m\x1b[K\n'}
+[3.541611] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:26:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktimer_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktimer_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.541861] (eced3901) StderrLine: {'line': b'   26 |         \x1b[01;31m\x1b[Ktimer_\x1b[m\x1b[K = this->create_wall_timer(100ms, std::bind(&SquareRoutine::timer_callback, this));\n'}
+[3.541938] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.542000] (eced3901) StderrLine: {'line': b'      |         \x1b[32m\x1b[Ktimer_t\x1b[m\x1b[K\n'}
+[3.542061] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:26:75:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktimer_callback\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[KSquareRoutine\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.542122] (eced3901) StderrLine: {'line': b'   26 |         timer_ = this->create_wall_timer(100ms, std::bind(&SquareRoutine::\x1b[01;31m\x1b[Ktimer_callback\x1b[m\x1b[K, this));\n'}
+[3.542181] (eced3901) StderrLine: {'line': b'      |                                                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.546960] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:29:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcount_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.547165] (eced3901) StderrLine: {'line': b'   29 |         \x1b[01;31m\x1b[Kcount_\x1b[m\x1b[K = 0;\n'}
+[3.547239] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.557646] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:30:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klast_state_complete\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.557852] (eced3901) StderrLine: {'line': b'   30 |         \x1b[01;31m\x1b[Klast_state_complete\x1b[m\x1b[K = 1; // ready for first step\n'}
+[3.557927] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.566772] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:31:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_action_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.566977] (eced3901) StderrLine: {'line': b'   31 |         \x1b[01;31m\x1b[Kcurrent_action_\x1b[m\x1b[K = Action::IDLE;\n'}
+[3.567051] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.567261] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:31:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KAction\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[3.567390] (eced3901) StderrLine: {'line': b'   31 |         current_action_ = \x1b[01;31m\x1b[KAction\x1b[m\x1b[K::IDLE;\n'}
+[3.567462] (eced3901) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.576786] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:38:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klidar_sub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.577059] (eced3901) StderrLine: {'line': b'   38 |         \x1b[01;31m\x1b[Klidar_sub_\x1b[m\x1b[K = this->create_subscription<sensor_msgs::msg::LaserScan>("/scan",qos,std::bind(&SquareRoutine::lidar_callback, this, _1));\n'}
+[3.577460] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.608926] (-) TimerEvent: {}
+[3.633053] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SquareRoutine::lidar_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.633233] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:61:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfront_wall_dist\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.633323] (eced3901) StderrLine: {'line': b'   61 |                                 \x1b[01;31m\x1b[Kfront_wall_dist\x1b[m\x1b[K=front_window[front_window.size()/2];\n'}
+[3.633394] (eced3901) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.639011] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid topic_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.639208] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:86:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kx_now\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.639305] (eced3901) StderrLine: {'line': b'   86 |         \x1b[01;31m\x1b[Kx_now\x1b[m\x1b[K = msg->pose.pose.position.x;\n'}
+[3.639378] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.642765] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:87:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ky_now\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.642960] (eced3901) StderrLine: {'line': b'   87 |         \x1b[01;31m\x1b[Ky_now\x1b[m\x1b[K = msg->pose.pose.position.y;\n'}
+[3.643035] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.646440] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:88:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kq_x\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.646666] (eced3901) StderrLine: {'line': b'   88 |         \x1b[01;31m\x1b[Kq_x\x1b[m\x1b[K = msg->pose.pose.orientation.x;\n'}
+[3.646752] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[3.649952] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:89:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kq_y\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.650152] (eced3901) StderrLine: {'line': b'   89 |         \x1b[01;31m\x1b[Kq_y\x1b[m\x1b[K = msg->pose.pose.orientation.y;\n'}
+[3.650229] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[3.653315] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:90:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kq_z\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.653510] (eced3901) StderrLine: {'line': b'   90 |         \x1b[01;31m\x1b[Kq_z\x1b[m\x1b[K = msg->pose.pose.orientation.z;\n'}
+[3.653606] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[3.656505] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:91:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kq_w\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.656716] (eced3901) StderrLine: {'line': b'   91 |         \x1b[01;31m\x1b[Kq_w\x1b[m\x1b[K = msg->pose.pose.orientation.w;\n'}
+[3.656793] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[3.659699] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid timer_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.659907] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:99:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kq_x\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.659983] (eced3901) StderrLine: {'line': b'   99 |         tf2::Quaternion q(\x1b[01;31m\x1b[Kq_x\x1b[m\x1b[K, q_y, q_z, q_w);\n'}
+[3.660047] (eced3901) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[3.662836] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:99:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kq_y\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.663021] (eced3901) StderrLine: {'line': b'   99 |         tf2::Quaternion q(q_x, \x1b[01;31m\x1b[Kq_y\x1b[m\x1b[K, q_z, q_w);\n'}
+[3.663095] (eced3901) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[3.665992] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:99:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kq_z\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.666197] (eced3901) StderrLine: {'line': b'   99 |         tf2::Quaternion q(q_x, q_y, \x1b[01;31m\x1b[Kq_z\x1b[m\x1b[K, q_w);\n'}
+[3.666271] (eced3901) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[3.669152] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:99:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kq_w\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.669366] (eced3901) StderrLine: {'line': b'   99 |         tf2::Quaternion q(q_x, q_y, q_z, \x1b[01;31m\x1b[Kq_w\x1b[m\x1b[K);\n'}
+[3.669441] (eced3901) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[3.674340] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:103:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kth_now\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.674592] (eced3901) StderrLine: {'line': b'  103 |         \x1b[01;31m\x1b[Kth_now\x1b[m\x1b[K = yaw;\n'}
+[3.674708] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.678360] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:106:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kd_now\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.678565] (eced3901) StderrLine: {'line': b'  106 |         \x1b[01;31m\x1b[Kd_now\x1b[m\x1b[K = std::hypot(x_now - x_init, y_now - y_init);\n'}
+[3.678650] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.681735] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:106:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kx_now\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.681921] (eced3901) StderrLine: {'line': b'  106 |         d_now = std::hypot(\x1b[01;31m\x1b[Kx_now\x1b[m\x1b[K - x_init, y_now - y_init);\n'}
+[3.681993] (eced3901) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.685076] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:106:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kx_init\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ku_int\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.685279] (eced3901) StderrLine: {'line': b'  106 |         d_now = std::hypot(x_now - \x1b[01;31m\x1b[Kx_init\x1b[m\x1b[K, y_now - y_init);\n'}
+[3.685360] (eced3901) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.685425] (eced3901) StderrLine: {'line': b'      |                                    \x1b[32m\x1b[Ku_int\x1b[m\x1b[K\n'}
+[3.688515] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:106:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ky_now\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.688716] (eced3901) StderrLine: {'line': b'  106 |         d_now = std::hypot(x_now - x_init, \x1b[01;31m\x1b[Ky_now\x1b[m\x1b[K - y_init);\n'}
+[3.688791] (eced3901) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.692157] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:106:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ky_init\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ku_int\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.692349] (eced3901) StderrLine: {'line': b'  106 |         d_now = std::hypot(x_now - x_init, y_now - \x1b[01;31m\x1b[Ky_init\x1b[m\x1b[K);\n'}
+[3.692423] (eced3901) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.692488] (eced3901) StderrLine: {'line': b'      |                                                    \x1b[32m\x1b[Ku_int\x1b[m\x1b[K\n'}
+[3.697859] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:108:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_action_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.698052] (eced3901) StderrLine: {'line': b'  108 |         if (\x1b[01;31m\x1b[Kcurrent_action_\x1b[m\x1b[K == Action::MOVE)\n'}
+[3.698126] (eced3901) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.698190] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:108:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KAction\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[3.698253] (eced3901) StderrLine: {'line': b'  108 |         if (current_action_ == \x1b[01;31m\x1b[KAction\x1b[m\x1b[K::MOVE)\n'}
+[3.698328] (eced3901) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.701332] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:110:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kx_vel\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.701517] (eced3901) StderrLine: {'line': b'  110 |         msg.linear.x = \x1b[01;31m\x1b[Kx_vel\x1b[m\x1b[K;\n'}
+[3.701603] (eced3901) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.704697] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:111:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kd_aim\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.704869] (eced3901) StderrLine: {'line': b'  111 |             double error = \x1b[01;31m\x1b[Kd_aim\x1b[m\x1b[K - d_now;\n'}
+[3.704940] (eced3901) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.709058] (-) TimerEvent: {}
+[3.710028] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:114:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfront_wall_dist\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.710199] (eced3901) StderrLine: {'line': b'  114 |             if (error < 0.01 || \x1b[01;31m\x1b[Kfront_wall_dist\x1b[m\x1b[K < 0.32) // 1 cm tolerance\n'}
+[3.710270] (eced3901) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.710334] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:118:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KAction\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[3.710395] (eced3901) StderrLine: {'line': b'  118 |                 current_action_ = \x1b[01;31m\x1b[KAction\x1b[m\x1b[K::IDLE;\n'}
+[3.710456] (eced3901) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.716678] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:119:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klast_state_complete\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.716896] (eced3901) StderrLine: {'line': b'  119 |                 \x1b[01;31m\x1b[Klast_state_complete\x1b[m\x1b[K = 1;\n'}
+[3.716969] (eced3901) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.717033] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:124:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KAction\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[3.717096] (eced3901) StderrLine: {'line': b'  124 |         else if (current_action_ == \x1b[01;31m\x1b[KAction\x1b[m\x1b[K::TURN)\n'}
+[3.717158] (eced3901) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.720568] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:126:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kth_init\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ku_int\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.720780] (eced3901) StderrLine: {'line': b'  126 |             double angle_turned = wrap_angle(th_now - \x1b[01;31m\x1b[Kth_init\x1b[m\x1b[K);\n'}
+[3.720852] (eced3901) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.720917] (eced3901) StderrLine: {'line': b'      |                                                       \x1b[32m\x1b[Ku_int\x1b[m\x1b[K\n'}
+[3.726807] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:126:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kwrap_angle\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.727100] (eced3901) StderrLine: {'line': b'  126 |             double angle_turned = \x1b[01;31m\x1b[Kwrap_angle\x1b[m\x1b[K(th_now - th_init);\n'}
+[3.727208] (eced3901) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.730297] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:127:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kth_aim\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.730492] (eced3901) StderrLine: {'line': b'  127 |             double remaining = \x1b[01;31m\x1b[Kth_aim\x1b[m\x1b[K - angle_turned;\n'}
+[3.730578] (eced3901) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.734147] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:131:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kth_vel\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.734341] (eced3901) StderrLine: {'line': b'  131 |                 msg.angular.z = (remaining > 0 ? \x1b[01;31m\x1b[Kth_vel\x1b[m\x1b[K : -th_vel);\n'}
+[3.734421] (eced3901) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.734489] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:136:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KAction\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[3.734568] (eced3901) StderrLine: {'line': b'  136 |                 current_action_ = \x1b[01;31m\x1b[KAction\x1b[m\x1b[K::IDLE;\n'}
+[3.734639] (eced3901) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.741773] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:137:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klast_state_complete\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.741997] (eced3901) StderrLine: {'line': b'  137 |                 \x1b[01;31m\x1b[Klast_state_complete\x1b[m\x1b[K = 1;\n'}
+[3.742088] (eced3901) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.745818] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:141:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpublisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.746022] (eced3901) StderrLine: {'line': b'  141 |         \x1b[01;31m\x1b[Kpublisher_\x1b[m\x1b[K->publish(msg);\n'}
+[3.746102] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.746168] (eced3901) StderrLine: {'line': b'      |         \x1b[32m\x1b[Krmw_publisher_t\x1b[m\x1b[K\n'}
+[3.752921] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:142:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksequence_statemachine\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.753117] (eced3901) StderrLine: {'line': b'  142 |         \x1b[01;31m\x1b[Ksequence_statemachine\x1b[m\x1b[K();\n'}
+[3.753190] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.759560] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid sequence_statemachine()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.759749] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:147:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klast_state_complete\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.759825] (eced3901) StderrLine: {'line': b'  147 |         if (\x1b[01;31m\x1b[Klast_state_complete\x1b[m\x1b[K)\n'}
+[3.759891] (eced3901) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.763163] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:151:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcount_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.763374] (eced3901) StderrLine: {'line': b'  151 |             switch (\x1b[01;31m\x1b[Kcount_\x1b[m\x1b[K)\n'}
+[3.763453] (eced3901) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.768425] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:153:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmove_distance\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.768770] (eced3901) StderrLine: {'line': b'  153 |             case 0: \x1b[01;31m\x1b[Kmove_distance\x1b[m\x1b[K(1.2192); RCLCPP_INFO(this->get_logger(), "Case 0"); break; // 4 ft forward\n'}
+[3.768859] (eced3901) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.768926] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.768991] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.769059] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.769119] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.769178] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.769239] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.769297] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.769356] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.769433] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.769494] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.769580] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.769652] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:153:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.769729] (eced3901) StderrLine: {'line': b'  153 |             case 0: move_distance(1.2192); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 0"); break; // 4 ft forward\n'}
+[3.769793] (eced3901) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.769855] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:153:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.769919] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:153:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.769982] (eced3901) StderrLine: {'line': b'  153 |             case 0: move_distance(1.2192); \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Case 0"); break; // 4 ft forward\n'}
+[3.770048] (eced3901) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.770287] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.770429] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.770526] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.770627] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.770693] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.770754] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.770814] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.770874] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.770933] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.771000] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.771059] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.771118] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.771176] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:153:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.771236] (eced3901) StderrLine: {'line': b'  153 |             case 0: move_distance(1.2192); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 0"); break; // 4 ft forward\n'}
+[3.771294] (eced3901) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.771351] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:153:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.771410] (eced3901) StderrLine: {'line': b'  153 |             case 0: move_distance(1.2192); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 0"); break; // 4 ft forward\n'}
+[3.771469] (eced3901) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.777645] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:154:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcorrect_with_wall\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.777848] (eced3901) StderrLine: {'line': b'  154 |             case 1: \x1b[01;31m\x1b[Kcorrect_with_wall\x1b[m\x1b[K(0.32); RCLCPP_INFO(this->get_logger(), "Case 1"); break;\n'}
+[3.777936] (eced3901) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.778006] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.778074] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.778141] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.778216] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.778285] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.778349] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.778414] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.778480] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.778555] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.778630] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.778693] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.778757] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:154:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.778828] (eced3901) StderrLine: {'line': b'  154 |             case 1: correct_with_wall(0.32); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 1"); break;\n'}
+[3.778892] (eced3901) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.778955] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:154:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.779019] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:154:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.779081] (eced3901) StderrLine: {'line': b'  154 |             case 1: correct_with_wall(0.32); \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Case 1"); break;\n'}
+[3.779144] (eced3901) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.779326] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.779420] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.779484] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.779553] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.779626] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.779684] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.779742] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.779799] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.779856] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.779926] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.779984] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.780055] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.780114] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:154:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.780172] (eced3901) StderrLine: {'line': b'  154 |             case 1: correct_with_wall(0.32); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 1"); break;\n'}
+[3.780231] (eced3901) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.780289] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:154:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.780346] (eced3901) StderrLine: {'line': b'  154 |             case 1: correct_with_wall(0.32); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 1"); break;\n'}
+[3.780405] (eced3901) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.782130] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:155:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kturn_angle\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.782383] (eced3901) StderrLine: {'line': b'  155 |             case 2: \x1b[01;31m\x1b[Kturn_angle\x1b[m\x1b[K(M_PI / 2); RCLCPP_INFO(this->get_logger(), "Case 2"); break;  // turn left 90\xc2\xb0\n'}
+[3.782559] (eced3901) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.782720] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.782791] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.782861] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.782930] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.783000] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.783070] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.783138] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.783208] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.783283] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.783353] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.783422] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.783490] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:155:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.783870] (eced3901) StderrLine: {'line': b'  155 |             case 2: turn_angle(M_PI / 2); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 2"); break;  // turn left 90\xc2\xb0\n'}
+[3.784188] (eced3901) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.784266] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:155:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.784341] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:155:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.784412] (eced3901) StderrLine: {'line': b'  155 |             case 2: turn_angle(M_PI / 2); \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Case 2"); break;  // turn left 90\xc2\xb0\n'}
+[3.784482] (eced3901) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.784632] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.784917] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.784998] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.785070] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.785138] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.785206] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.785272] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.785337] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.785413] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.785479] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.785549] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.785625] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.785690] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:155:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.785757] (eced3901) StderrLine: {'line': b'  155 |             case 2: turn_angle(M_PI / 2); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 2"); break;  // turn left 90\xc2\xb0\n'}
+[3.785821] (eced3901) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.785884] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:155:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.785948] (eced3901) StderrLine: {'line': b'  155 |             case 2: turn_angle(M_PI / 2); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 2"); break;  // turn left 90\xc2\xb0\n'}
+[3.786019] (eced3901) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.786086] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.786152] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.786217] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.786283] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.786348] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.786412] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.786475] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.786546] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.786627] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.786691] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.786752] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.786813] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:156:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.786876] (eced3901) StderrLine: {'line': b'  156 |             case 3: move_distance(0.3068); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 3"); break; // 1 ft forward\n'}
+[3.786947] (eced3901) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.787016] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:156:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.787081] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:156:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.787143] (eced3901) StderrLine: {'line': b'  156 |             case 3: move_distance(0.3068); \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Case 3"); break; // 1 ft forward\n'}
+[3.787204] (eced3901) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.787267] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.787328] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.787389] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.787449] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.787510] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.788126] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.788210] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.788275] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.788339] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.788403] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.788467] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.788545] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.788618] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:156:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.788683] (eced3901) StderrLine: {'line': b'  156 |             case 3: move_distance(0.3068); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 3"); break; // 1 ft forward\n'}
+[3.788750] (eced3901) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.788814] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:156:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.788878] (eced3901) StderrLine: {'line': b'  156 |             case 3: move_distance(0.3068); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 3"); break; // 1 ft forward\n'}
+[3.788947] (eced3901) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.789011] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.789074] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.789136] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.789202] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.789266] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.789331] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.789393] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.789455] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.789518] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.789596] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.789661] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.789721] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:157:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.789789] (eced3901) StderrLine: {'line': b'  157 |             case 4: correct_with_wall(0.32); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 4"); break;\n'}
+[3.789850] (eced3901) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.789912] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:157:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.789975] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:157:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.790043] (eced3901) StderrLine: {'line': b'  157 |             case 4: correct_with_wall(0.32); \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Case 4"); break;\n'}
+[3.790105] (eced3901) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.790166] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.790228] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.790289] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.790350] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.790411] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.790472] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.790534] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.790619] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.790681] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.790742] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.790803] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.790864] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.790926] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:157:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.790995] (eced3901) StderrLine: {'line': b'  157 |             case 4: correct_with_wall(0.32); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 4"); break;\n'}
+[3.791056] (eced3901) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.791116] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:157:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.791177] (eced3901) StderrLine: {'line': b'  157 |             case 4: correct_with_wall(0.32); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 4"); break;\n'}
+[3.791247] (eced3901) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.791311] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.791373] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.791436] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.791499] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.791573] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.791641] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.791704] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.791768] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.791832] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.791896] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.791961] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.792025] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:158:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.792109] (eced3901) StderrLine: {'line': b'  158 |             case 5: turn_angle(-M_PI / 2); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 5"); break; // turn right 90\xc2\xb0\n'}
+[3.792186] (eced3901) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.792255] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:158:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.792324] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:158:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.792392] (eced3901) StderrLine: {'line': b'  158 |             case 5: turn_angle(-M_PI / 2); \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Case 5"); break; // turn right 90\xc2\xb0\n'}
+[3.792460] (eced3901) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.792611] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.792682] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.792744] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.792807] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.792870] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.792933] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.793005] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.793067] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.793128] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.793189] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.793250] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.793310] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.793372] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:158:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.793434] (eced3901) StderrLine: {'line': b'  158 |             case 5: turn_angle(-M_PI / 2); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 5"); break; // turn right 90\xc2\xb0\n'}
+[3.793496] (eced3901) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.793570] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:158:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.793648] (eced3901) StderrLine: {'line': b'  158 |             case 5: turn_angle(-M_PI / 2); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 5"); break; // turn right 90\xc2\xb0\n'}
+[3.793712] (eced3901) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.793773] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.793834] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.793895] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.793955] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.794016] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.794077] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.794137] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.794198] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.794261] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.794326] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.794389] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.794452] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:159:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.794520] (eced3901) StderrLine: {'line': b'  159 |             case 6: move_distance(1.2192); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 6"); break; // 4 ft forward\n'}
+[3.794596] (eced3901) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.794660] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:159:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.794721] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:159:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.794782] (eced3901) StderrLine: {'line': b'  159 |             case 6: move_distance(1.2192); \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Case 6"); break; // 4 ft forward\n'}
+[3.794844] (eced3901) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.794905] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.794966] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.795029] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.795099] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.795162] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.795225] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.795290] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.795354] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.795419] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.795482] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.795553] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.795627] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.795691] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:159:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.795754] (eced3901) StderrLine: {'line': b'  159 |             case 6: move_distance(1.2192); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 6"); break; // 4 ft forward\n'}
+[3.795822] (eced3901) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.795891] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:159:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.796018] (eced3901) StderrLine: {'line': b'  159 |             case 6: move_distance(1.2192); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 6"); break; // 4 ft forward\n'}
+[3.796094] (eced3901) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.796157] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.796221] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.796283] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.796346] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.796409] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.796473] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.796535] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.796616] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.796680] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.796742] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.796804] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.796865] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:160:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.796927] (eced3901) StderrLine: {'line': b'  160 |             case 7: correct_with_wall(0.32); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 7"); break;\n'}
+[3.796989] (eced3901) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.797051] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:160:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.797113] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:160:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.797175] (eced3901) StderrLine: {'line': b'  160 |             case 7: correct_with_wall(0.32); \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Case 7"); break;\n'}
+[3.797236] (eced3901) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.797297] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.797358] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.797419] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.797480] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.797546] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.797624] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.797701] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.797764] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.797827] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.797887] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.797949] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.798009] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.798072] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:160:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.798136] (eced3901) StderrLine: {'line': b'  160 |             case 7: correct_with_wall(0.32); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 7"); break;\n'}
+[3.798198] (eced3901) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.798261] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:160:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.798327] (eced3901) StderrLine: {'line': b'  160 |             case 7: correct_with_wall(0.32); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 7"); break;\n'}
+[3.798389] (eced3901) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.798451] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.798512] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.798584] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.798653] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.798716] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.798778] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.798841] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.798904] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.798968] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.799031] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.799094] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.799162] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:161:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.799225] (eced3901) StderrLine: {'line': b'  161 |             case 8: turn_angle(-M_PI / 2); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 8"); break; // turn right 90\xc2\xb0\n'}
+[3.799290] (eced3901) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.799354] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:161:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.799417] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:161:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.799527] (eced3901) StderrLine: {'line': b'  161 |             case 8: turn_angle(-M_PI / 2); \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Case 8"); break; // turn right 90\xc2\xb0\n'}
+[3.799612] (eced3901) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.799679] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.799742] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.799804] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.799867] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.799930] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.799992] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.800054] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.800118] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.800181] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.800256] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.800320] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.800384] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.800445] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:161:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.800508] (eced3901) StderrLine: {'line': b'  161 |             case 8: turn_angle(-M_PI / 2); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 8"); break; // turn right 90\xc2\xb0\n'}
+[3.800585] (eced3901) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.800654] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:161:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.800720] (eced3901) StderrLine: {'line': b'  161 |             case 8: turn_angle(-M_PI / 2); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 8"); break; // turn right 90\xc2\xb0\n'}
+[3.800781] (eced3901) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.800842] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.800903] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.800964] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.801027] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.801089] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.801155] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.801215] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.801276] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.801336] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.801398] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.801459] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.801519] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:162:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.801595] (eced3901) StderrLine: {'line': b'  162 |             case 9: move_distance(0.35); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 9"); break; // 1 ft forward\n'}
+[3.801659] (eced3901) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.801721] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:162:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.801783] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:162:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.801845] (eced3901) StderrLine: {'line': b'  162 |             case 9: move_distance(0.35); \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Case 9"); break; // 1 ft forward\n'}
+[3.801908] (eced3901) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.801970] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.802031] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.802092] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.802153] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.802220] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.802282] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.802345] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.802406] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.802469] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.802531] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.802607] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.802674] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.802745] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:162:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.802810] (eced3901) StderrLine: {'line': b'  162 |             case 9: move_distance(0.35); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 9"); break; // 1 ft forward\n'}
+[3.802874] (eced3901) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.802942] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:162:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.803007] (eced3901) StderrLine: {'line': b'  162 |             case 9: move_distance(0.35); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 9"); break; // 1 ft forward\n'}
+[3.803072] (eced3901) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.803141] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.803218] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.803287] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.803355] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.803424] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.803493] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.803612] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.803686] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.803758] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.803822] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.803890] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.803953] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:163:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.804017] (eced3901) StderrLine: {'line': b'  163 |             case 10: correct_with_wall(0.32); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 10"); break;\n'}
+[3.804078] (eced3901) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.804139] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:163:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.804201] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:163:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.804262] (eced3901) StderrLine: {'line': b'  163 |             case 10: correct_with_wall(0.32); \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Case 10"); break;\n'}
+[3.804324] (eced3901) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.804385] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.804447] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.804508] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.804585] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.804651] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.804711] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.804773] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.804833] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.804895] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.804957] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.805018] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.805080] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.805141] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:163:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.805203] (eced3901) StderrLine: {'line': b'  163 |             case 10: correct_with_wall(0.32); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 10"); break;\n'}
+[3.805273] (eced3901) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.805336] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:163:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.805403] (eced3901) StderrLine: {'line': b'  163 |             case 10: correct_with_wall(0.32); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 10"); break;\n'}
+[3.805466] (eced3901) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.805527] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.805601] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.805664] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.805725] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.805785] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.805846] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.805906] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.805969] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.806032] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.806095] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.806158] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.806228] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:164:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.806292] (eced3901) StderrLine: {'line': b'  164 |             case 11: turn_angle(M_PI / 2); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 11"); break;  // turn left 90\xc2\xb0\n'}
+[3.806356] (eced3901) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.806420] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:164:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.806485] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:164:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.806555] (eced3901) StderrLine: {'line': b'  164 |             case 11: turn_angle(M_PI / 2); \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Case 11"); break;  // turn left 90\xc2\xb0\n'}
+[3.806630] (eced3901) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.806694] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.806758] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.806828] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.806939] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.807002] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.807065] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.807128] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.807190] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.807253] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.807316] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.807379] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.807442] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.807506] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:164:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.807591] (eced3901) StderrLine: {'line': b'  164 |             case 11: turn_angle(M_PI / 2); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 11"); break;  // turn left 90\xc2\xb0\n'}
+[3.807669] (eced3901) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.807731] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:164:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.807797] (eced3901) StderrLine: {'line': b'  164 |             case 11: turn_angle(M_PI / 2); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 11"); break;  // turn left 90\xc2\xb0\n'}
+[3.807859] (eced3901) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.807920] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.807982] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.808044] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.808105] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.808167] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.808228] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.808289] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.808350] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.808412] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.808479] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.808547] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.808618] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:165:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.808681] (eced3901) StderrLine: {'line': b'  165 |             case 12: move_distance(1.2192); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 12"); break; // 4 ft final leg\n'}
+[3.808749] (eced3901) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.808810] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:165:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.808872] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:165:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.808932] (eced3901) StderrLine: {'line': b'  165 |             case 12: move_distance(1.2192); \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Case 12"); break; // 4 ft final leg\n'}
+[3.808993] (eced3901) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.809052] (-) TimerEvent: {}
+[3.809251] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.809334] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.809398] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.809460] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.809521] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.809599] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.809663] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.809726] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.809788] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.809851] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.809913] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.809976] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.810039] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:165:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.810113] (eced3901) StderrLine: {'line': b'  165 |             case 12: move_distance(1.2192); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 12"); break; // 4 ft final leg\n'}
+[3.810177] (eced3901) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.810245] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:165:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.810309] (eced3901) StderrLine: {'line': b'  165 |             case 12: move_distance(1.2192); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 12"); break; // 4 ft final leg\n'}
+[3.810372] (eced3901) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.810441] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.810504] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.810583] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.810656] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.810725] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.810793] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.810861] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.810927] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.810995] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.811062] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.811129] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.811195] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:166:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.811264] (eced3901) StderrLine: {'line': b'  166 |             case 13: correct_with_wall(0.32); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 13"); break;\n'}
+[3.811332] (eced3901) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.811399] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:166:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.811510] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:166:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.811593] (eced3901) StderrLine: {'line': b'  166 |             case 13: correct_with_wall(0.32); \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Case 13"); break;\n'}
+[3.811657] (eced3901) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.811719] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.811781] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.811849] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.811910] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.811971] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.812033] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.812093] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.812155] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.812216] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.812278] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.812339] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.812402] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.812464] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:166:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.812532] (eced3901) StderrLine: {'line': b'  166 |             case 13: correct_with_wall(0.32); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 13"); break;\n'}
+[3.812609] (eced3901) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.812671] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:166:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.812733] (eced3901) StderrLine: {'line': b'  166 |             case 13: correct_with_wall(0.32); RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Case 13"); break;\n'}
+[3.812794] (eced3901) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.812855] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid move_distance(double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.812918] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:174:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kd_aim\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.812987] (eced3901) StderrLine: {'line': b'  174 |         \x1b[01;31m\x1b[Kd_aim\x1b[m\x1b[K = distance;\n'}
+[3.813049] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.813109] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:175:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kx_init\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ku_int\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.813172] (eced3901) StderrLine: {'line': b'  175 |         \x1b[01;31m\x1b[Kx_init\x1b[m\x1b[K = x_now;\n'}
+[3.813233] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.813294] (eced3901) StderrLine: {'line': b'      |         \x1b[32m\x1b[Ku_int\x1b[m\x1b[K\n'}
+[3.813359] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:175:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kx_now\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.813420] (eced3901) StderrLine: {'line': b'  175 |         x_init = \x1b[01;31m\x1b[Kx_now\x1b[m\x1b[K;\n'}
+[3.813480] (eced3901) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.813546] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:176:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ky_init\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ku_int\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.813617] (eced3901) StderrLine: {'line': b'  176 |         \x1b[01;31m\x1b[Ky_init\x1b[m\x1b[K = y_now;\n'}
+[3.813677] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.813738] (eced3901) StderrLine: {'line': b'      |         \x1b[32m\x1b[Ku_int\x1b[m\x1b[K\n'}
+[3.813799] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:176:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ky_now\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.813860] (eced3901) StderrLine: {'line': b'  176 |         y_init = \x1b[01;31m\x1b[Ky_now\x1b[m\x1b[K;\n'}
+[3.813920] (eced3901) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.813979] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:177:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcount_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.814040] (eced3901) StderrLine: {'line': b'  177 |         \x1b[01;31m\x1b[Kcount_\x1b[m\x1b[K++;\n'}
+[3.814100] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.816729] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:178:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_action_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.816933] (eced3901) StderrLine: {'line': b'  178 |         \x1b[01;31m\x1b[Kcurrent_action_\x1b[m\x1b[K = Action::MOVE;\n'}
+[3.817012] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.817080] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:178:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KAction\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[3.817146] (eced3901) StderrLine: {'line': b'  178 |         current_action_ = \x1b[01;31m\x1b[KAction\x1b[m\x1b[K::MOVE;\n'}
+[3.817211] (eced3901) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.820724] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid turn_angle(double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.820917] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:183:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kth_aim\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.820998] (eced3901) StderrLine: {'line': b'  183 |         \x1b[01;31m\x1b[Kth_aim\x1b[m\x1b[K = angle;\n'}
+[3.821065] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.824431] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:184:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kth_init\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ku_int\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.824631] (eced3901) StderrLine: {'line': b'  184 |         \x1b[01;31m\x1b[Kth_init\x1b[m\x1b[K = th_now;\n'}
+[3.824723] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.824792] (eced3901) StderrLine: {'line': b'      |         \x1b[32m\x1b[Ku_int\x1b[m\x1b[K\n'}
+[3.827931] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:184:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kth_now\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.828131] (eced3901) StderrLine: {'line': b'  184 |         th_init = \x1b[01;31m\x1b[Kth_now\x1b[m\x1b[K;\n'}
+[3.828204] (eced3901) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.831390] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:185:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcount_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.831574] (eced3901) StderrLine: {'line': b'  185 |         \x1b[01;31m\x1b[Kcount_\x1b[m\x1b[K++;\n'}
+[3.831654] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.836970] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:186:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcurrent_action_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.837294] (eced3901) StderrLine: {'line': b'  186 |         \x1b[01;31m\x1b[Kcurrent_action_\x1b[m\x1b[K = Action::TURN;\n'}
+[3.837383] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.837459] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:186:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KAction\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[3.837532] (eced3901) StderrLine: {'line': b'  186 |         current_action_ = \x1b[01;31m\x1b[KAction\x1b[m\x1b[K::TURN;\n'}
+[3.837697] (eced3901) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.837765] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.837830] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.837894] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.837958] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.838042] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.838105] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.838169] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.838233] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.838297] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.838361] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.838424] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.838488] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid correct_with_wall(double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.838579] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:198:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.838649] (eced3901) StderrLine: {'line': b'  198 |         RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Front wall: %f", front_wall_dist);\n'}
+[3.838711] (eced3901) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.838772] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:198:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.838834] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:198:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.838896] (eced3901) StderrLine: {'line': b'  198 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "Front wall: %f", front_wall_dist);\n'}
+[3.838958] (eced3901) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.839019] (eced3901) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[3.839087] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[3.839149] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[3.839210] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[3.839271] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.839332] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.839393] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.839454] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[3.839518] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[3.839597] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.839669] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[3.839732] (eced3901) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:5\x1b[m\x1b[K:\n'}
+[3.839793] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:198:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.839856] (eced3901) StderrLine: {'line': b'  198 |         RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Front wall: %f", front_wall_dist);\n'}
+[3.839919] (eced3901) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.839981] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:198:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[3.840045] (eced3901) StderrLine: {'line': b'  198 |         RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Front wall: %f", front_wall_dist);\n'}
+[3.840113] (eced3901) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.844062] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:198:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfront_wall_dist\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.844266] (eced3901) StderrLine: {'line': b'  198 |         RCLCPP_INFO(this->get_logger(), "Front wall: %f", \x1b[01;31m\x1b[Kfront_wall_dist\x1b[m\x1b[K);\n'}
+[3.844346] (eced3901) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.849799] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:199:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfront_wall_dist\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.849991] (eced3901) StderrLine: {'line': b'  199 |         double error = \x1b[01;31m\x1b[Kfront_wall_dist\x1b[m\x1b[K - target_dist; // positive if too far, negative if too close\n'}
+[3.850065] (eced3901) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.853273] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:202:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kx_vel\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.853494] (eced3901) StderrLine: {'line': b'  202 |                 \x1b[01;31m\x1b[Kx_vel\x1b[m\x1b[K = (error > 0) ? 0.05 : -0.05; // move forward if too far, backward if too close\n'}
+[3.853589] (eced3901) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.856911] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:208:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcount_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.857098] (eced3901) StderrLine: {'line': b'  208 |                 \x1b[01;31m\x1b[Kcount_\x1b[m\x1b[K++;\n'}
+[3.857170] (eced3901) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.863576] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:209:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klast_state_complete\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.863756] (eced3901) StderrLine: {'line': b'  209 |                 \x1b[01;31m\x1b[Klast_state_complete\x1b[m\x1b[K = 1;\n'}
+[3.863832] (eced3901) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.909204] (-) TimerEvent: {}
+[3.910913] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:\x1b[m\x1b[K At global scope:\n'}
+[3.911089] (eced3901) StderrLine: {'line': b'\x1b[01m\x1b[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:236:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected declaration before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[3.911169] (eced3901) StderrLine: {'line': b'  236 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K;\n'}
+[3.911238] (eced3901) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.009351] (-) TimerEvent: {}
+[4.109676] (-) TimerEvent: {}
+[4.210101] (-) TimerEvent: {}
+[4.310431] (-) TimerEvent: {}
+[4.410853] (-) TimerEvent: {}
+[4.511196] (-) TimerEvent: {}
+[4.611523] (-) TimerEvent: {}
+[4.711881] (-) TimerEvent: {}
+[4.812190] (-) TimerEvent: {}
+[4.912526] (-) TimerEvent: {}
+[5.012876] (-) TimerEvent: {}
+[5.113208] (-) TimerEvent: {}
+[5.213530] (-) TimerEvent: {}
+[5.313879] (-) TimerEvent: {}
+[5.414179] (-) TimerEvent: {}
+[5.514562] (-) TimerEvent: {}
+[5.614912] (-) TimerEvent: {}
+[5.715248] (-) TimerEvent: {}
+[5.815591] (-) TimerEvent: {}
+[5.915929] (-) TimerEvent: {}
+[6.016267] (-) TimerEvent: {}
+[6.116589] (-) TimerEvent: {}
+[6.216919] (-) TimerEvent: {}
+[6.317219] (-) TimerEvent: {}
+[6.361407] (eced3901) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/part1.dir/build.make:76: CMakeFiles/part1.dir/src/part1.cpp.o] Error 1\n'}
+[6.361687] (eced3901) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/part1.dir/all] Error 2\n'}
+[6.361790] (eced3901) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[6.417339] (-) TimerEvent: {}
+[6.517651] (-) TimerEvent: {}
+[6.617980] (-) TimerEvent: {}
+[6.718306] (-) TimerEvent: {}
+[6.818634] (-) TimerEvent: {}
+[6.918899] (-) TimerEvent: {}
+[7.019156] (-) TimerEvent: {}
+[7.119447] (-) TimerEvent: {}
+[7.219760] (-) TimerEvent: {}
+[7.320072] (-) TimerEvent: {}
+[7.420382] (-) TimerEvent: {}
+[7.520677] (-) TimerEvent: {}
+[7.620969] (-) TimerEvent: {}
+[7.721260] (-) TimerEvent: {}
+[7.821565] (-) TimerEvent: {}
+[7.921891] (-) TimerEvent: {}
+[8.022213] (-) TimerEvent: {}
+[8.122473] (-) TimerEvent: {}
+[8.222787] (-) TimerEvent: {}
+[8.323082] (-) TimerEvent: {}
+[8.423375] (-) TimerEvent: {}
+[8.523678] (-) TimerEvent: {}
+[8.624008] (-) TimerEvent: {}
+[8.724295] (-) TimerEvent: {}
+[8.824601] (-) TimerEvent: {}
+[8.924899] (-) TimerEvent: {}
+[9.025187] (-) TimerEvent: {}
+[9.125483] (-) TimerEvent: {}
+[9.225803] (-) TimerEvent: {}
+[9.326099] (-) TimerEvent: {}
+[9.426396] (-) TimerEvent: {}
+[9.526713] (-) TimerEvent: {}
+[9.627086] (-) TimerEvent: {}
+[9.721344] (eced3901) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking CXX executable openo\x1b[0m\n'}
+[9.727195] (-) TimerEvent: {}
+[9.827506] (-) TimerEvent: {}
+[9.927886] (-) TimerEvent: {}
+[10.028210] (-) TimerEvent: {}
+[10.128519] (-) TimerEvent: {}
+[10.186348] (eced3901) StdoutLine: {'line': b'[ 91%] Built target openo\n'}
+[10.187482] (eced3901) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[10.189417] (eced3901) CommandEnded: {'returncode': 2}
+[10.202466] (eced3901) JobEnded: {'identifier': 'eced3901', 'rc': 2}
+[10.217662] (-) EventReactorShutdown: {}

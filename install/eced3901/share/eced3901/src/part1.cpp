@@ -39,30 +39,47 @@ public:
 }
 
 private:
-    //added method to store front wall distance
     void lidar_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg) {
-    	int front_index = msg->ranges.size() / 2; // straight ahead
-    	front_wall_dist = msg->ranges[front_index];
+    	//int front_index = msg->ranges.size() / 2; // straight ahead
+    	//front_wall_dist = msg->ranges[front_index];
+    	
+    		int total = msg->ranges.size();
+    		int front_index = total/2; //straight ahead
+    		int left_index = (3*total)/4;
+    		int right_index = total /4;
+    		
 
-    	//double target_dist = 0.2;  // 20 cm
-    	//double tolerance = 0.02;   // ±2 cm
+		//int front_index = msg->ranges.size();
+		//int window = 3;
+		//std::vector<float> front_window;
 
-    	//geometry_msgs::msg::Twist cmd;
+		front_wall_dist = get_median(front_index, msg);
+		left_wall_dist  = get_median(left_index, msg);
+    		right_wall_dist = get_median(right_index, msg);
+    		
+    		RCLCPP_INFO(this->get_logger(), "F: %.2f L: %.2f R: %.2f", front_wall_dist, left_wall_dist, right_wall_dist);
 
-    	/*if (front_wall_dist > target_dist + tolerance) {
-        	cmd.linear.x = x_vel;  // move forward
-        	cmd.angular.z = 0.0;
-    	} else if (front_wall_dist < target_dist - tolerance) {
-        	cmd.linear.x = -x_vel; // move backward
-        	cmd.angular.z = 0.0;
-    	} else {
-    		last_state_complete = 1; //move to next action 
-    	}*/
+	}
+	
+double get_median(int center_index, const sensor_msgs::msg::LaserScan::SharedPtr msg) {
+    int window = 3;
+    std::vector<float> vals;
 
-    //publisher_->publish(cmd);
-    //sequence_statemachine();
-    //RCLCPP_INFO(this->get_logger(), "Front wall: %f", front_wall_dist);
+    int start = std::max(0, center_index - window);
+    int end   = std::min((int)msg->ranges.size() - 1, center_index + window);
+
+    for (int i = start; i <= end; ++i) {
+        if (msg->ranges[i] >= msg->range_min && msg->ranges[i] <= msg->range_max) {
+            vals.push_back(msg->ranges[i]);
+        }
+    }
+
+    if (vals.empty()) return 10.0; // fallback (no wall)
+
+    std::sort(vals.begin(), vals.end());
+    return vals[vals.size() / 2];
 }
+
     void topic_callback(const nav_msgs::msg::Odometry::SharedPtr msg)
     {
         x_now = msg->pose.pose.position.x;
@@ -87,22 +104,35 @@ private:
         // Distance travelled
         d_now = std::hypot(x_now - x_init, y_now - y_init);
 
-        if (current_action_ == Action::MOVE)
-        {
-       	msg.linear.x = x_vel;
-            double error = d_aim - d_now;
-            
-            
-            if (error < 0.01 || front_wall_dist < 0.32) // 1 cm tolerance
-            {
-                msg.linear.x = 0.0;
-                msg.angular.z = 0.0;
-                current_action_ = Action::IDLE;
-                last_state_complete = 1;
-                //sequence_statemachine();
-            }
-           
-        }
+       if (current_action_ == Action::MOVE)
+{
+    msg.linear.x = x_vel;
+
+    double dist_error = d_aim - d_now;
+    double threshold = 0.32;
+    double k = 1.5;
+
+    // Stop condition
+    if (dist_error < 0.01 || front_wall_dist < threshold)
+    {
+        msg.linear.x = 0.0;
+        msg.angular.z = 0.0;
+        current_action_ = Action::IDLE;
+        last_state_complete = 1;
+    }
+    else
+    {
+        double error = 0.0;
+
+        if (left_wall_dist < threshold)
+            error -= (threshold - left_wall_dist);
+
+        if (right_wall_dist < threshold)
+            error += (threshold - right_wall_dist);
+
+        msg.angular.z = k * error;
+    }
+}
         else if (current_action_ == Action::TURN)
         {
             double angle_turned = wrap_angle(th_now - th_init);
@@ -215,6 +245,9 @@ private:
 
     //adding front wall dist variable
     double front_wall_dist = 0.0;
+    //adding side wall variables
+    double left_wall_dist = 0.0;
+    double right_wall_dist = 0.0;
 };
 
 // Main
@@ -225,3 +258,7 @@ int main(int argc, char* argv[])
     rclcpp::shutdown();
     return 0;
 }
+
+
+
+

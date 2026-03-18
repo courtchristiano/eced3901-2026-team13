@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-02131aa3e64363c6a741.json",
+					"jsonFile" : "directory-.-f002fecc86d63b3e990e.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.12"
@@ -22,7 +22,8 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7
 					]
 				}
 			],
@@ -43,7 +44,8 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7
 					]
 				}
 			],
@@ -52,21 +54,21 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Demo::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Demo-5294b712a2ac4d07720a.json",
+					"jsonFile" : "target-Demo-ae0f8254c1733cb4777c.json",
 					"name" : "Demo",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "Demo2::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Demo2-57c8fb5f06869427b512.json",
+					"jsonFile" : "target-Demo2-ae0ec42ce5d43dc3bc82.json",
 					"name" : "Demo2",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "dt1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-dt1-1e76bf04c5715c1537ec.json",
+					"jsonFile" : "target-dt1-e5f118e34751d7a6bfe6.json",
 					"name" : "dt1",
 					"projectIndex" : 0
 				},
@@ -79,15 +81,22 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "openo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-openo-08000be388f302fca927.json",
+					"name" : "openo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "part1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-part1-5c3b799b76b91edb2e6f.json",
+					"jsonFile" : "target-part1-438f2b676d2fd724427e.json",
 					"name" : "part1",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "talker::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-talker-6f44af60f41aec3da80d.json",
+					"jsonFile" : "target-talker-cce59508cda9b248cc60.json",
 					"name" : "talker",
 					"projectIndex" : 0
 				},
