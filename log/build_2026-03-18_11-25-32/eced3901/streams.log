@@ -1,0 +1,16 @@
+[0.014s] Invoking command in '/home/student/ros2_ws/src/eced3901/build/eced3901': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/imu_ws/install/bno055:/home/student/motor_ws/install/dalmotor:/opt/ros/humble /usr/bin/cmake --build /home/student/ros2_ws/src/eced3901/build/eced3901 -- -j4 -l4
+[0.156s] [ 33%] Built target talker
+[0.156s] [ 33%] Built target dt1
+[0.156s] [ 66%] Built target Demo
+[0.156s] [ 66%] Built target Demo2
+[0.171s] [35m[1mConsolidate compiler generated dependencies of target part1[0m
+[0.184s] [ 83%] Built target openo
+[0.188s] [ 91%] [32mBuilding CXX object CMakeFiles/part1.dir/src/part1.cpp.o[0m
+[2.697s] [01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:[m[K In lambda function:
+[2.697s] [01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:77:42:[m[K [01;31m[Kerror: [m[Kinconsistent types ‘[01m[Kdouble[m[K’ and ‘[01m[Kfloat[m[K’ deduced for lambda return type
+[2.697s]    77 |             return values[values.size()/2[01;31m[K][m[K;
+[2.698s]       |                                          [01;31m[K^[m[K
+[7.299s] gmake[2]: *** [CMakeFiles/part1.dir/build.make:76: CMakeFiles/part1.dir/src/part1.cpp.o] Error 1
+[7.299s] gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/part1.dir/all] Error 2
+[7.299s] gmake: *** [Makefile:146: all] Error 2
+[7.301s] Invoked command in '/home/student/ros2_ws/src/eced3901/build/eced3901' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/imu_ws/install/bno055:/home/student/motor_ws/install/dalmotor:/opt/ros/humble /usr/bin/cmake --build /home/student/ros2_ws/src/eced3901/build/eced3901 -- -j4 -l4

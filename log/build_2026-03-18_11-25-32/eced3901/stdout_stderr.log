@@ -1,0 +1,14 @@
+[ 33%] Built target talker
+[ 33%] Built target dt1
+[ 66%] Built target Demo
+[ 66%] Built target Demo2
+[35m[1mConsolidate compiler generated dependencies of target part1[0m
+[ 83%] Built target openo
+[ 91%] [32mBuilding CXX object CMakeFiles/part1.dir/src/part1.cpp.o[0m
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:[m[K In lambda function:
+[01m[K/home/student/ros2_ws/src/eced3901/src/part1.cpp:77:42:[m[K [01;31m[Kerror: [m[Kinconsistent types ‘[01m[Kdouble[m[K’ and ‘[01m[Kfloat[m[K’ deduced for lambda return type
+   77 |             return values[values.size()/2[01;31m[K][m[K;
+      |                                          [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/part1.dir/build.make:76: CMakeFiles/part1.dir/src/part1.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:251: CMakeFiles/part1.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

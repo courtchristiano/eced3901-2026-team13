@@ -6,6 +6,7 @@
 /home/student/ros2_ws/src/eced3901/build/eced3901/CMakeFiles/Demo2.dir
 /home/student/ros2_ws/src/eced3901/build/eced3901/CMakeFiles/part1.dir
 /home/student/ros2_ws/src/eced3901/build/eced3901/CMakeFiles/openo.dir
+/home/student/ros2_ws/src/eced3901/build/eced3901/CMakeFiles/openo2.dir
 /home/student/ros2_ws/src/eced3901/build/eced3901/CMakeFiles/test.dir
 /home/student/ros2_ws/src/eced3901/build/eced3901/CMakeFiles/edit_cache.dir
 /home/student/ros2_ws/src/eced3901/build/eced3901/CMakeFiles/rebuild_cache.dir

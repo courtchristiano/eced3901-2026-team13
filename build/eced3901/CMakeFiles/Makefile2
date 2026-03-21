@@ -69,6 +69,7 @@ all: CMakeFiles/Demo.dir/all
 all: CMakeFiles/Demo2.dir/all
 all: CMakeFiles/part1.dir/all
 all: CMakeFiles/openo.dir/all
+all: CMakeFiles/openo2.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -84,6 +85,7 @@ clean: CMakeFiles/Demo.dir/clean
 clean: CMakeFiles/Demo2.dir/clean
 clean: CMakeFiles/part1.dir/clean
 clean: CMakeFiles/openo.dir/clean
+clean: CMakeFiles/openo2.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -145,7 +147,7 @@ CMakeFiles/eced3901_uninstall.dir/clean:
 CMakeFiles/talker.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/ros2_ws/src/eced3901/build/eced3901/CMakeFiles --progress-num=11,12 "Built target talker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/ros2_ws/src/eced3901/build/eced3901/CMakeFiles --progress-num=13,14 "Built target talker"
 .PHONY : CMakeFiles/talker.dir/all
 
 # Build rule for subdir invocation for target.
@@ -249,7 +251,7 @@ CMakeFiles/Demo2.dir/clean:
 CMakeFiles/part1.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/part1.dir/build.make CMakeFiles/part1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/part1.dir/build.make CMakeFiles/part1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/ros2_ws/src/eced3901/build/eced3901/CMakeFiles --progress-num=9,10 "Built target part1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/ros2_ws/src/eced3901/build/eced3901/CMakeFiles --progress-num=11,12 "Built target part1"
 .PHONY : CMakeFiles/part1.dir/all
 
 # Build rule for subdir invocation for target.
@@ -293,6 +295,32 @@ openo: CMakeFiles/openo.dir/rule
 CMakeFiles/openo.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/openo.dir/build.make CMakeFiles/openo.dir/clean
 .PHONY : CMakeFiles/openo.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/openo2.dir
+
+# All Build rule for target.
+CMakeFiles/openo2.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openo2.dir/build.make CMakeFiles/openo2.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openo2.dir/build.make CMakeFiles/openo2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/student/ros2_ws/src/eced3901/build/eced3901/CMakeFiles --progress-num=9,10 "Built target openo2"
+.PHONY : CMakeFiles/openo2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/openo2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/ros2_ws/src/eced3901/build/eced3901/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/openo2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/ros2_ws/src/eced3901/build/eced3901/CMakeFiles 0
+.PHONY : CMakeFiles/openo2.dir/rule
+
+# Convenience name for target.
+openo2: CMakeFiles/openo2.dir/rule
+.PHONY : openo2
+
+# clean rule for target.
+CMakeFiles/openo2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/openo2.dir/build.make CMakeFiles/openo2.dir/clean
+.PHONY : CMakeFiles/openo2.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

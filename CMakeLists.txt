@@ -38,6 +38,9 @@ ament_target_dependencies(part1 rclcpp geometry_msgs nav_msgs sensor_msgs tf2 se
 add_executable(openo src/openo.cpp)
 ament_target_dependencies(openo rclcpp geometry_msgs nav_msgs sensor_msgs tf2 sensor_msgs)
 
+add_executable(openo2 src/openo2.cpp)
+ament_target_dependencies(openo2 rclcpp geometry_msgs nav_msgs sensor_msgs tf2 sensor_msgs)
+
 # Install Cpp executables
 install(TARGETS
   talker
@@ -46,6 +49,7 @@ install(TARGETS
   Demo
   part1
   openo
+  openo2
   DESTINATION lib/${PROJECT_NAME})
 # uncomment the following section in order to fill in
 # further dependencies manually.
