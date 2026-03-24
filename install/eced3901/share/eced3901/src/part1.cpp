@@ -160,7 +160,7 @@ private:
                 case 10: correct_with_wall(0.32); break;
                 case 11: turn_angle(M_PI / 2); break;
                 case 12: move_distance(1.2192); break;
-                case 13: correct_with_wall(0.32); break;
+                case 13: correct_with_wall(0.4572); break;
                 default: break;
             }
         }

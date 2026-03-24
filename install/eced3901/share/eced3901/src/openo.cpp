@@ -116,7 +116,8 @@ class SquareRoutine : public rclcpp::Node
 			switch(count_) 
 			{
 			  case 0:
-			    move_distance(3.6576);
+			    move_distance(3.200);
+			    //correct_with_wall(0.4572);
 			    break;
 
 			  default:
@@ -154,7 +155,8 @@ class SquareRoutine : public rclcpp::Node
            	}           
         	return angle - M_PI;
     	}
-    
+    	
+    	
 	
 	// Declaration of subscription_ attribute
 	rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr subscription_;

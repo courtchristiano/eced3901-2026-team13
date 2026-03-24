@@ -35,6 +35,9 @@ ament_target_dependencies(Demo2 rclcpp geometry_msgs nav_msgs sensor_msgs tf2)
 add_executable(part1 src/part1.cpp)
 ament_target_dependencies(part1 rclcpp geometry_msgs nav_msgs sensor_msgs tf2 sensor_msgs)
 
+add_executable(flipped src/flipped.cpp)
+ament_target_dependencies(flipped rclcpp geometry_msgs nav_msgs sensor_msgs tf2 sensor_msgs)
+
 add_executable(openo src/openo.cpp)
 ament_target_dependencies(openo rclcpp geometry_msgs nav_msgs sensor_msgs tf2 sensor_msgs)
 
@@ -50,6 +53,7 @@ install(TARGETS
   part1
   openo
   openo2
+  flipped
   DESTINATION lib/${PROJECT_NAME})
 # uncomment the following section in order to fill in
 # further dependencies manually.

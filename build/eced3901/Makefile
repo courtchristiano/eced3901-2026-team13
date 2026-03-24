@@ -263,6 +263,19 @@ part1/fast:
 .PHONY : part1/fast
 
 #=============================================================================
+# Target rules for targets named flipped
+
+# Build rule for target.
+flipped: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 flipped
+.PHONY : flipped
+
+# fast build rule for target.
+flipped/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/flipped.dir/build.make CMakeFiles/flipped.dir/build
+.PHONY : flipped/fast
+
+#=============================================================================
 # Target rules for targets named openo
 
 # Build rule for target.
@@ -359,6 +372,30 @@ src/eced3901_dt1.s: src/eced3901_dt1.cpp.s
 src/eced3901_dt1.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dt1.dir/build.make CMakeFiles/dt1.dir/src/eced3901_dt1.cpp.s
 .PHONY : src/eced3901_dt1.cpp.s
+
+src/flipped.o: src/flipped.cpp.o
+.PHONY : src/flipped.o
+
+# target to build an object file
+src/flipped.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/flipped.dir/build.make CMakeFiles/flipped.dir/src/flipped.cpp.o
+.PHONY : src/flipped.cpp.o
+
+src/flipped.i: src/flipped.cpp.i
+.PHONY : src/flipped.i
+
+# target to preprocess a source file
+src/flipped.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/flipped.dir/build.make CMakeFiles/flipped.dir/src/flipped.cpp.i
+.PHONY : src/flipped.cpp.i
+
+src/flipped.s: src/flipped.cpp.s
+.PHONY : src/flipped.s
+
+# target to generate assembly for a file
+src/flipped.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/flipped.dir/build.make CMakeFiles/flipped.dir/src/flipped.cpp.s
+.PHONY : src/flipped.cpp.s
 
 src/openo.o: src/openo.cpp.o
 .PHONY : src/openo.o
@@ -474,6 +511,7 @@ help:
 	@echo "... Demo"
 	@echo "... Demo2"
 	@echo "... dt1"
+	@echo "... flipped"
 	@echo "... openo"
 	@echo "... openo2"
 	@echo "... part1"
@@ -487,6 +525,9 @@ help:
 	@echo "... src/eced3901_dt1.o"
 	@echo "... src/eced3901_dt1.i"
 	@echo "... src/eced3901_dt1.s"
+	@echo "... src/flipped.o"
+	@echo "... src/flipped.i"
+	@echo "... src/flipped.s"
 	@echo "... src/openo.o"
 	@echo "... src/openo.i"
 	@echo "... src/openo.s"

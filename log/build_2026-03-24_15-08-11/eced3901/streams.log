@@ -1,0 +1,184 @@
+[0.015s] Invoking command in '/home/student/ros2_ws/src/eced3901/build/eced3901': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/imu_ws/install/bno055:/home/student/motor_ws/install/dalmotor:/opt/ros/humble /usr/bin/cmake --build /home/student/ros2_ws/src/eced3901/build/eced3901 -- -j4 -l4
+[0.068s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.213s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.244s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.247s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.254s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.266s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.279s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.313s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.315s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.414s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.470s] -- Found rclpy: 3.3.19 (/opt/ros/humble/share/rclpy/cmake)
+[0.470s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.483s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.500s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.517s] -- Found tf2: 0.25.18 (/opt/ros/humble/share/tf2/cmake)
+[0.535s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.732s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.732s] -- Configured cppcheck include dirs: 
+[0.732s] -- Configured cppcheck exclude dirs and/or files: 
+[0.747s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.769s] -- Added test 'lint_cmake' to check CMake code style
+[0.779s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.861s] -- Added test 'uncrustify' to check C / C++ code style
+[0.861s] -- Configured uncrustify additional arguments: 
+[0.874s] -- Added test 'xmllint' to check XML markup files
+[0.875s] -- Configuring done
+[0.907s] -- Generating done
+[0.920s] -- Build files have been written to: /home/student/ros2_ws/src/eced3901/build/eced3901
+[0.946s] [35m[1mConsolidate compiler generated dependencies of target dt1[0m
+[0.947s] [35m[1mConsolidate compiler generated dependencies of target talker[0m
+[0.947s] [35m[1mConsolidate compiler generated dependencies of target Demo2[0m
+[0.948s] [35m[1mConsolidate compiler generated dependencies of target Demo[0m
+[0.973s] [ 12%] Built target talker
+[0.973s] [ 37%] Built target Demo2
+[0.973s] [ 37%] Built target dt1
+[0.974s] [ 50%] Built target Demo
+[0.985s] [35m[1mConsolidate compiler generated dependencies of target part1[0m
+[0.985s] [35m[1mConsolidate compiler generated dependencies of target openo[0m
+[0.985s] [35m[1mConsolidate compiler generated dependencies of target openo2[0m
+[0.994s] [ 56%] [32mBuilding CXX object CMakeFiles/flipped.dir/src/flipped.cpp.o[0m
+[1.001s] [ 62%] [32mBuilding CXX object CMakeFiles/openo.dir/src/openo.cpp.o[0m
+[1.002s] [ 68%] [32mBuilding CXX object CMakeFiles/part1.dir/src/part1.cpp.o[0m
+[1.002s] [ 81%] Built target openo2
+[11.371s] [ 87%] [32m[1mLinking CXX executable openo[0m
+[11.966s] [ 87%] Built target openo
+[14.536s] [ 93%] [32m[1mLinking CXX executable part1[0m
+[14.539s] [100%] [32m[1mLinking CXX executable flipped[0m
+[15.343s] [100%] Built target flipped
+[15.346s] [100%] Built target part1
+[15.355s] Invoked command in '/home/student/ros2_ws/src/eced3901/build/eced3901' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/imu_ws/install/bno055:/home/student/motor_ws/install/dalmotor:/opt/ros/humble /usr/bin/cmake --build /home/student/ros2_ws/src/eced3901/build/eced3901 -- -j4 -l4
+[15.364s] Invoking command in '/home/student/ros2_ws/src/eced3901/build/eced3901': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/imu_ws/install/bno055:/home/student/motor_ws/install/dalmotor:/opt/ros/humble /usr/bin/cmake --install /home/student/ros2_ws/src/eced3901/build/eced3901
+[15.371s] -- Install configuration: ""
+[15.372s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/lib/eced3901/talker
+[15.372s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/lib/eced3901/dt1
+[15.373s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/lib/eced3901/Demo2
+[15.374s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/lib/eced3901/Demo
+[15.374s] -- Installing: /home/student/ros2_ws/src/eced3901/install/eced3901/lib/eced3901/part1
+[15.379s] -- Set runtime path of "/home/student/ros2_ws/src/eced3901/install/eced3901/lib/eced3901/part1" to ""
+[15.380s] -- Installing: /home/student/ros2_ws/src/eced3901/install/eced3901/lib/eced3901/openo
+[15.382s] -- Set runtime path of "/home/student/ros2_ws/src/eced3901/install/eced3901/lib/eced3901/openo" to ""
+[15.383s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/lib/eced3901/openo2
+[15.383s] -- Installing: /home/student/ros2_ws/src/eced3901/install/eced3901/lib/eced3901/flipped
+[15.387s] -- Set runtime path of "/home/student/ros2_ws/src/eced3901/install/eced3901/lib/eced3901/flipped" to ""
+[15.387s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/config
+[15.387s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/config/ekf.yaml
+[15.388s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch
+[15.388s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/lab3.launch.py
+[15.388s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/lab4a.launch.py
+[15.388s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/lab4b.launch.py
+[15.388s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/lab6a.launch.py
+[15.388s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/build
+[15.388s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/build/COLCON_IGNORE
+[15.388s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/build/.built_by
+[15.388s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/demo.launch.py
+[15.388s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/install
+[15.388s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/install/setup.sh
+[15.389s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/install/.colcon_install_layout
+[15.389s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/install/_local_setup_util_ps1.py
+[15.389s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/install/setup.zsh
+[15.389s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/install/local_setup.bash
+[15.389s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/install/COLCON_IGNORE
+[15.389s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/install/local_setup.zsh
+[15.389s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/install/local_setup.sh
+[15.389s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/install/setup.bash
+[15.389s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/install/setup.ps1
+[15.389s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/install/local_setup.ps1
+[15.389s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/install/_local_setup_util_sh.py
+[15.390s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/log
+[15.390s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/log/COLCON_IGNORE
+[15.390s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/log/build_2026-03-05_10-38-55
+[15.390s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/log/build_2026-03-05_10-38-55/logger_all.log
+[15.390s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/log/build_2026-03-05_10-38-55/events.log
+[15.390s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/log/latest_build
+[15.390s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/log/latest
+[15.390s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/lab5dt2.launch.py
+[15.390s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/lab7nav.launch.py
+[15.390s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/lab5.launch.py
+[15.390s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/part2.py
+[15.390s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/lab6b.launch.py
+[15.390s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/lab7full.launch.py
+[15.390s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/launch/lab6nav.launch.py
+[15.391s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/maps
+[15.391s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/maps/lab4_map.yaml
+[15.391s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/maps/lab4_map.pgm
+[15.391s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/models
+[15.391s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/models/eced3901bot_description
+[15.391s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/models/eced3901bot_description/model.sdf
+[15.391s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/models/eced3901bot_description/model.config
+[15.391s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/models/eced3901_lab4
+[15.391s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/models/eced3901_lab4/model.sdf
+[15.391s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/models/eced3901_lab4/model.config
+[15.391s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/models/eced3901bot.urdf
+[15.391s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/params
+[15.391s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/params/nav2_params.yaml
+[15.391s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/rviz
+[15.392s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/rviz/nav2_config.rviz
+[15.392s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/rviz/urdf_config.rviz
+[15.392s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/rviz/nav2.rviz
+[15.392s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src
+[15.392s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/Test5.cpp
+[15.392s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/Demo.cpp
+[15.392s] -- Installing: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/part1.cpp
+[15.392s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/openo2.cpp
+[15.392s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/publisher_member_function.cpp
+[15.392s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/build
+[15.392s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/build/COLCON_IGNORE
+[15.392s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/build/.built_by
+[15.392s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/Test4.cpp
+[15.393s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/install
+[15.393s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/install/setup.sh
+[15.393s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/install/.colcon_install_layout
+[15.393s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/install/_local_setup_util_ps1.py
+[15.393s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/install/setup.zsh
+[15.393s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/install/local_setup.bash
+[15.393s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/install/COLCON_IGNORE
+[15.393s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/install/local_setup.zsh
+[15.393s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/install/local_setup.sh
+[15.393s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/install/setup.bash
+[15.393s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/install/setup.ps1
+[15.393s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/install/local_setup.ps1
+[15.393s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/install/_local_setup_util_sh.py
+[15.394s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/eced3901_dt1.cpp
+[15.394s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/log
+[15.394s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/log/COLCON_IGNORE
+[15.394s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/log/build_2026-03-04_09-18-31
+[15.394s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/log/build_2026-03-04_09-18-31/logger_all.log
+[15.394s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/log/build_2026-03-04_09-18-31/events.log
+[15.394s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/log/latest_build
+[15.394s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/log/latest
+[15.394s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/log/build_2026-03-04_13-17-03
+[15.394s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/log/build_2026-03-04_13-17-03/logger_all.log
+[15.394s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/log/build_2026-03-04_13-17-03/events.log
+[15.394s] -- Installing: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/openo.cpp
+[15.395s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/fulllidar
+[15.395s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/Test3.cpp
+[15.395s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/Demo2.cpp
+[15.395s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/Test1.cpp
+[15.395s] -- Installing: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/flipped.cpp
+[15.395s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/src/Test2.cpp
+[15.395s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/worlds
+[15.395s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/worlds/eced3901_lab6.world
+[15.395s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/worlds/empty.world
+[15.395s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/worlds/eced3901_lab4.world
+[15.395s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/lib/eced3901/wp_follower.py
+[15.396s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/lib/eced3901/demo_inspection.py
+[15.396s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/lib/eced3901/part3.py
+[15.396s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/lib/eced3901/wp_demo.py
+[15.396s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/ament_index/resource_index/package_run_dependencies/eced3901
+[15.396s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/ament_index/resource_index/parent_prefix_path/eced3901
+[15.396s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/environment/ament_prefix_path.sh
+[15.396s] -- Installing: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/environment/ament_prefix_path.dsv
+[15.396s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/environment/path.sh
+[15.396s] -- Installing: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/environment/path.dsv
+[15.396s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/local_setup.bash
+[15.396s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/local_setup.sh
+[15.396s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/local_setup.zsh
+[15.397s] -- Installing: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/local_setup.dsv
+[15.397s] -- Installing: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/package.dsv
+[15.397s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/ament_index/resource_index/packages/eced3901
+[15.397s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/cmake/eced3901Config.cmake
+[15.397s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/cmake/eced3901Config-version.cmake
+[15.397s] -- Up-to-date: /home/student/ros2_ws/src/eced3901/install/eced3901/share/eced3901/package.xml
+[15.397s] Invoked command in '/home/student/ros2_ws/src/eced3901/build/eced3901' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/student/imu_ws/install/bno055:/home/student/motor_ws/install/dalmotor:/opt/ros/humble /usr/bin/cmake --install /home/student/ros2_ws/src/eced3901/build/eced3901

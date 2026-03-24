@@ -1,0 +1,18 @@
+[ 12%] Built target Demo2
+[ 31%] Built target talker
+[ 37%] Built target Demo
+[ 50%] Built target dt1
+[35m[1mConsolidate compiler generated dependencies of target flipped[0m
+[35m[1mConsolidate compiler generated dependencies of target part1[0m
+[35m[1mConsolidate compiler generated dependencies of target openo[0m
+[ 87%] Built target openo2
+[ 87%] Built target part1
+[ 87%] Built target flipped
+[ 93%] [32mBuilding CXX object CMakeFiles/openo.dir/src/openo.cpp.o[0m
+[01m[K/home/student/ros2_ws/src/eced3901/src/openo.cpp:[m[K In member function ‘[01m[Kvoid SquareRoutine::correct_with_wall(double)[m[K’:
+[01m[K/home/student/ros2_ws/src/eced3901/src/openo.cpp:160:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kfront_wall_dist[m[K’ was not declared in this scope
+  160 |         double error = [01;31m[Kfront_wall_dist[m[K - target_dist;
+      |                        [01;31m[K^~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/openo.dir/build.make:76: CMakeFiles/openo.dir/src/openo.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:307: CMakeFiles/openo.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

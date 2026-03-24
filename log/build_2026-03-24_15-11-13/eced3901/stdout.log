@@ -1,0 +1,11 @@
+[ 12%] Built target Demo2
+[ 31%] Built target talker
+[ 37%] Built target Demo
+[ 50%] Built target dt1
+[35m[1mConsolidate compiler generated dependencies of target flipped[0m
+[35m[1mConsolidate compiler generated dependencies of target part1[0m
+[35m[1mConsolidate compiler generated dependencies of target openo[0m
+[ 87%] Built target openo2
+[ 87%] Built target part1
+[ 87%] Built target flipped
+[ 93%] [32mBuilding CXX object CMakeFiles/openo.dir/src/openo.cpp.o[0m
