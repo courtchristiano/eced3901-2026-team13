@@ -115,13 +115,8 @@ private:
                 current_action_ = Action::IDLE;
                 last_state_complete = 1;
             } else {
-                double error = 0.0;
-                if (left_wall_dist < threshold)
-                    error -= (threshold - left_wall_dist);
-                if (right_wall_dist < threshold)
-                    error += (threshold - right_wall_dist);
-
-                msg.angular.z = k * error;
+               double error = left_wall_dist - right_wall_dist;
+msg.angular.z = 0.3 * error;
             }
         }
         // ===== TURN =====
@@ -159,7 +154,7 @@ private:
                 case 9: move_distance(0.35); break;
                 case 10: correct_with_wall(0.32); break;
                 case 11: turn_angle(M_PI / 2); break;
-                case 12: move_distance(1.2192); break;
+                case 12: move_distance(0.7); break;
                 case 13: correct_with_wall(0.4572); break;
                 default: break;
             }

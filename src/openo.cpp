@@ -116,7 +116,7 @@ class SquareRoutine : public rclcpp::Node
 			switch(count_) 
 			{
 			  case 0:
-			    move_distance(3.200);
+			    move_distance(3);
 			    //correct_with_wall(0.4572);
 			    break;
 
